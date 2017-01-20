@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-20T03:03:26.110Z</updated>
+  <updated>2017-01-20T04:43:42.665Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2017/01/19/%E8%BF%87%E4%B8%80%E7%A7%8D%E6%B2%89%E6%B5%B8%E7%9A%84%E4%BA%BA%E7%94%9F/"/>
     <id>http://yoursite.com/2017/01/19/过一种沉浸的人生/</id>
     <published>2017-01-19T13:49:49.485Z</published>
-    <updated>2017-01-20T03:03:26.110Z</updated>
+    <updated>2017-01-20T04:43:42.665Z</updated>
     
-    <content type="html"><![CDATA[<p>title:过一种沉浸的人生  tags: 少数派</p>
-<p>「本文参与 少数派2016年度征文</p>
+    <content type="html"><![CDATA[<p>title: title #过一种沉浸的人生<br>date: 2017-01-20 12:41:04 #文章生成时间<br>categories: #文章分类目录 可以省略<br>tags: [少数派,征文,生活] #文章标签 可以省略<br>description: #你对本页的描述 可以省略</p>
+<p>「本文参与 少数派2016年度征文」</p>
 <p>我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 <a href="https://en.wikipedia.org/wiki/Jacqueline_Novogratz" target="_blank" rel="external">Jacqueline Novogratz</a> 的TED演讲 <a href="https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion" target="_blank" rel="external">Inspiring a life of immersion</a> 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。<a id="more"></a></p>
 <p>从小的教育不断向我灌输一个<strong>狡黠</strong>的观点：We should live a life of success。它不是错误的，但也不是完全正确的，但隐约觉得这是在将我引向欲望的沟壑。</p>
 <p>罗伯特·肯尼迪曾说：</p>
@@ -90,8 +90,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;title:过一种沉浸的人生  tags: 少数派&lt;/p&gt;
-&lt;p&gt;「本文参与 少数派2016年度征文&lt;/p&gt;
+      &lt;p&gt;title: title #过一种沉浸的人生&lt;br&gt;date: 2017-01-20 12:41:04 #文章生成时间&lt;br&gt;categories: #文章分类目录 可以省略&lt;br&gt;tags: [少数派,征文,生活] #文章标签 可以省略&lt;br&gt;description: #你对本页的描述 可以省略&lt;/p&gt;
+&lt;p&gt;「本文参与 少数派2016年度征文」&lt;/p&gt;
 &lt;p&gt;我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 &lt;a href=&quot;https://en.wikipedia.org/wiki/Jacqueline_Novogratz&quot;&gt;Jacqueline Novogratz&lt;/a&gt; 的TED演讲 &lt;a href=&quot;https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion&quot;&gt;Inspiring a life of immersion&lt;/a&gt; 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。
     
     </summary>

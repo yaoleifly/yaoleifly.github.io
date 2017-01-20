@@ -588,30 +588,6 @@
   </entry>
   
   <entry>
-    <title>问卷调查</title>
-    <link href="http://yoursite.com/2015/09/20/%E9%97%AE%E5%8D%B7/"/>
-    <id>http://yoursite.com/2015/09/20/问卷/</id>
-    <published>2015-09-20T07:06:43.000Z</published>
-    <updated>2015-09-19T23:07:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<iframe height="1200" width="1200" src="http://wj.qq.com/survey.html?type=survey&id=144319&hash=95b2" frameborder="0" allowfullscreen></iframe>
-
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;iframe height=&quot;1200&quot; width=&quot;1200&quot; src=&quot;http://wj.qq.com/survey.html?type=survey&amp;id=144319&amp;hash=95b2&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/ifra
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
     <title>《乡土中国》</title>
     <link href="http://yoursite.com/2015/09/15/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/"/>
     <id>http://yoursite.com/2015/09/15/乡土中国/</id>
@@ -639,10 +615,10 @@
     <link href="http://yoursite.com/2015/09/15/%E4%BF%A1%E6%81%AF%E6%97%B6%E4%BB%A3%E7%9A%84%E5%8F%8D%E6%80%9D%E4%B8%8E%E4%BA%BA%E7%94%9F%E6%84%BF%E6%99%AF/"/>
     <id>http://yoursite.com/2015/09/15/信息时代的反思与人生愿景/</id>
     <published>2015-09-15T03:11:09.000Z</published>
-    <updated>2015-09-14T19:13:34.000Z</updated>
+    <updated>2017-01-20T19:31:26.952Z</updated>
     
     <content type="html"><![CDATA[<h2 id="窗"><a href="#窗" class="headerlink" title="窗"></a>窗</h2><p>浏览器是一扇窗。</p>
-<p>这扇窗户开启了无限的可能性。你可以决定自己想要看到的风景，也可以设计别人透过这扇窗看到的你的样子。你可以在同一个窗口欣赏到夏天海边的日出日落，潮汐涨涌那波光粼粼中无穷变幻的色彩；也可以在下一个瞬间切换到某个冬日午后的图书馆，温暖的阳光穿过布帘微掩的落地窗，而你正悠然自得地翻开一本找寻已久的哲学书。</p>
+<p>这扇窗户开启了无限的可能性。你可以决定自己想要看到的风景，也可以设计别人透过这扇窗看到的你的样子。你可以在同一个窗口欣赏到夏天海边的日出日落，潮汐涨涌那波光粼粼中无穷变幻的色彩；也可以在下一个瞬间切换到某个冬日午后的图书馆，温暖的阳光穿过布帘微掩的落地窗，而你正悠然自得地翻开一本找寻已久的哲学书。<a id="more"></a></p>
 <p>而这扇窗户的无限可能，却也为这个注意力涣散的时代提供了易于滋生肤浅与无知的温床。泛滥互联网的快餐文字、广告与推广链接，正在吞噬着每一寸目力所及的网络空间，但这些也许还并不是我最想谈论的；甚至连最有益的思想，互联网的传播方式也正在威胁着它们存在的根本。</p>
 <p>你并非置身于一个实体的图书馆，毋须花费一个下午的好时光去静静解读和摘抄一本厚重的旧书，因为对于你来说，在互联网上搜索到对自己有用的、高度浓缩的知识简直易如反掌。你将不再需要间或起身，在层层迭迭的书架间找寻思想的关联，因为你所要做的只是——一次又一次机械地拖动鼠标，点击链接，时而保存或关闭页面，仅此而已。</p>
 <p>网络让信息的获取变得高效便捷，以至于随时随地唾手可得。人们逐渐失去的，是关于某个知识主题的专注力，是深度的阅读理解和鉴赏能力，因为网络上易于消化的信息是如此浩如烟海、而又随处可寻，以至于用心咀嚼品味文字的能力变得不再那么重要，在这个追求源源不断地汲取信息的时代；人们在不知不觉中放弃的，是开卷有益之后，本应有的更多的闭卷思考的时间。但，没有经过充分思考的知识只是言语的虚像。网络改变了我们的生活，也提高了知识分享的效率，扩大了有效信息的影响力；从一方面看，我常常对它那高信息量和高传播率带来的不可避免的——对独立思考的传统的破坏——感到忧虑。</p>
@@ -666,7 +642,7 @@
     <summary type="html">
     
       &lt;h2 id=&quot;窗&quot;&gt;&lt;a href=&quot;#窗&quot; class=&quot;headerlink&quot; title=&quot;窗&quot;&gt;&lt;/a&gt;窗&lt;/h2&gt;&lt;p&gt;浏览器是一扇窗。&lt;/p&gt;
-&lt;p&gt;这扇窗户开启了无限的可能性。你可以决定自己想要看到的风景，也可以设计别人透过这扇窗看到的你的样子。你可以在同一个窗口
+&lt;p&gt;这扇窗户开启了无限的可能性。你可以决定自己想要看到的风景，也可以设计别人透过这扇窗看到的你的样子。你可以在同一个窗口欣赏到夏天海边的日出日落，潮汐涨涌那波光粼粼中无穷变幻的色彩；也可以在下一个瞬间切换到某个冬日午后的图书馆，温暖的阳光穿过布帘微掩的落地窗，而你正悠然自得地翻开一本找寻已久的哲学书。
     
     </summary>
     
@@ -1127,6 +1103,46 @@
     <summary type="html">
     
       &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;一直都很喜欢做工很精致的东西。&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;生活用品要实用好用，这当然是一种基础，我也会渐渐提高对自己使用的东西的要求，它们也应该是符合自己心态的，作为一种可以体现本身生活态度的存在。
+    
+    </summary>
+    
+    
+      <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>默-那英</title>
+    <link href="http://yoursite.com/2015/07/24/%E9%BB%98-%E9%82%A3%E8%8B%B1/"/>
+    <id>http://yoursite.com/2015/07/24/默-那英/</id>
+    <published>2015-07-24T13:52:00.000Z</published>
+    <updated>2015-09-12T22:07:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p> 忍不住化身一条固执的鱼 </p>
+<p> 逆着洋流独自游到底 </p>
+<p> 年少时候虔诚发过的誓 </p>
+<p> 沉默地沉没在深海里</p>
+<a id="more"></a>
+<p> 重温几次／周而复始 </p>
+<p> 结局还是 </p>
+<p> 失去你 </p>
+<p> 我被爱判处终身孤寂 </p>
+<p> 不还手 不放手</p>
+<p> 笔下画不完的圆 心间填不满的缘 是你</p>
+<p> 为何爱判处众生孤寂 </p>
+<p> 挣不脱 逃不过 </p>
+<p> 眉头解不开的结 命中解不开的劫 是你 </p>
+<p> 啊 失去你 </p>
+<p> 啊 我失去你 </p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=31473269&auto=1&height=66"></iframe>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; 忍不住化身一条固执的鱼 &lt;/p&gt;
+&lt;p&gt; 逆着洋流独自游到底 &lt;/p&gt;
+&lt;p&gt; 年少时候虔诚发过的誓 &lt;/p&gt;
+&lt;p&gt; 沉默地沉没在深海里&lt;/p&gt;
     
     </summary>
     

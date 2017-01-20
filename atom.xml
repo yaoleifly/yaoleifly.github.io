@@ -688,264 +688,6 @@
   </entry>
   
   <entry>
-    <title>Windows下管理文件的方法</title>
-    <link href="http://yoursite.com/2015/09/13/Windows%E4%B8%8B%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>http://yoursite.com/2015/09/13/Windows下管理文件的方法/</id>
-    <published>2015-09-13T07:07:17.000Z</published>
-    <updated>2015-09-13T16:06:32.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>写一下我在Windows下管理文件的方法</p>
-<p><strong>本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬盘), D盘用了200+GB, 这意味着我的文件平均在几MB大小, 而大量的小文件是最难管理的. 所以我觉得我的管理方法基本适用于所有情况.</strong><a id="more"></a></p>
-<p>我的两个分区, D盘全部目录, 最重要的两个文件夹:桌面和我的文档<br><img src="http://icylogic.qiniudn.com/image/manage-files/all.png" alt=""></p>
-<p>从大往小说.</p>
-<p>下次再补充一些工具介绍, 加强资源管理的比如listary, clover, everything, TC等. 另外资源管理器的能力有限, 如果是比较单一的文件种类最好用相应库管理软件, 比如音乐用iTunes, 图书用Calibre, 代码用Git.</p>
-<p>##分区##</p>
-<p>我觉得现在没有把本地磁盘分区分到2个以上的必要, 把系统和所有程序装在C盘, 剩下都放在D盘, 相对于多分区的好处是显然的, 随便说两个:</p>
-<ul>
-<li>在同一个分区之内剪切/移动文件是瞬间完成的, 原理想一下就知道, 它只需要改几个位置的某些字符串. 但在分区之间剪切或复制内容的时候, 那就是实实在在地创建新文件.</li>
-</ul>
-<ul>
-<li>多分区的用户往往思维混乱, 比如他们把D盘起个名字叫工作, E盘起个名字叫娱乐, 发现E盘放不下了, 就搞个F盘起个名字叫电影, 各分区之间经常有很多功能重复的目录, 结果就是一个文件放这里也可以, 放哪里也可以, 那么要找文件的时候, 也就是从这里找也可以, 从那里找也可以, [[这是任何工具都帮不了你的问题,everything,]] listary什么的都帮不了. 将系统和应用程序以外文件全部放在一个盘, 才能随心所欲地管理文件.</li>
-</ul>
-<p>综上所述, 把磁盘分为两个</p>
-<p>一个装系统, 比如C盘, 大多数情况下, 不应该直接操作C盘, C盘有改动对于一般用户来说只能是以下几个操作: 安装和卸载程序, 重装系统.<br>一个放其他东西, 比如D盘, 因为C盘不需要我们操心, 所以本文以下基本都是在说D盘的文件管理</p>
-<p>##D盘:##</p>
-<p>###Cache###</p>
-<p><img src="http://icylogic.qiniudn.com/image/manage-files/Cache.png" alt=""></p>
-<p>这是很重要的文件夹, 所有浏览器和下载工具的下载目录全部设定到这个文件夹, 同时把这个文件夹设定为桌面文件夹 (即桌面上显示的就是这个文件夹的内容, 看图就清楚了), 平时下载的文件, 写代码时需要用来测试的文件, 还有其他临时文件全部在这个文件夹, 现在它只有一个文件因为我整理过了, 平时是可以很乱的, 它提醒你赶紧把这些玩意处理掉, 需要保留的就把它剪切到相应位置, 需要删的就shift+delete.</p>
-<p>###WindowsImageBackup###</p>
-<p>这是Win7自带还原生成的, 这个看个人习惯, 我之前用Comodo Time Machine, 尽管很快, 但是会造成一些问题, 所以我还是用回win自带的, 注意把备份周期设置地长一点, 否则会占用大量空间</p>
-<p>###Portable&amp;Bin###<br><img src="http://icylogic.qiniudn.com/image/manage-files/Portable.png" alt=""></p>
-<p>翻译成中文就是绿色软件, 绿色软件(Portable Software)的初衷是Portable, 装在U盘里到处都能用(因此我用Dropbox同步和备份这个文件夹), 但我看中的是:</p>
-<ul>
-<li>Portable Software 往往是开源的, 免费的, 安全的, 小巧的</li>
-</ul>
-<ul>
-<li>它可以在你无数次重装系统后, 无需安装即可打开, 并且和linux一样保留了用户习惯, 无需重新配置, 还是熟悉的配方.<br>所以建议能用Portable的都用.</li>
-</ul>
-<p>一般来说很多软件自己会有Portable Ver供下载, 也会有一些人专门把软件绿色化, 但一定要找安全的来源, 以下几个是常用的找绿色软件的网站</p>
-<ul>
-<li><a href="http://www.portablesoft.org/" target="_blank" rel="external">精品绿色便携软件</a></li>
-</ul>
-<ul>
-<li><a href="http://www.appinn.com/" target="_blank" rel="external">小众软件</a></li>
-</ul>
-<ul>
-<li><a href="http://portableapps.com/" target="_blank" rel="external">PortableApps</a></li>
-</ul>
-<p>Bin目录则是linux下的一些工具</p>
-<p>####子文件夹####</p>
-<p>单纯的列表, 每个软件一个文件夹</p>
-<p>####同步和备份####</p>
-<p>网络备份: Dropbox<br>本地备份: 备份到TrueCrypt加密过的U盘中</p>
-<p>###Develop###</p>
-<p><img src="http://icylogic.qiniudn.com/image/manage-files/Develop.png" alt=""></p>
-<p>原来我是把自己的代码放在Documents\Develop下的, 但是后来我把它单独拿出来了, 原因是, 我的Document文件夹是用Dropbox同步的, 常年开着Dropbox, 每改几行一保存一编译就同步一次各种代码中间文件编译结果等实在太蛋疼了, 尽管我也可以用某些方法让它不同步这个目录, 但还是拿出来方便一些. 而且其他文档我需要Dropbox的版本控制, 但那是针对一般文档, 比起git等专用于代码的版本控制系统来说, Dropbox就显得弱爆了, 我不愿意Dropbox把我的git目录也一起同步上去, 所以我的代码都是push到github或者bitbucket作为备份.</p>
-<p>####子文件夹####</p>
-<p>具体分类是这样的, 如果是针对平台的开发, 就放在对应平台文件夹下, 比如Windows/ARM等, 如果没什么特殊平台, 用同一种语言开发, 就放在对应语言文件夹下, 比如AHK/JAVA等</p>
-<p>每个文件夹下如图所示</p>
-<p><img src="http://icylogic.qiniudn.com/image/manage-files/AHK.png" alt=""></p>
-<p>分Documents和Projects文件夹, 一些还有Library/SDK文件夹, Documents就是对应文档, 比如j2se 的API文档等, Projects就是一个个项目目录了, 都用git管理.</p>
-<p>####同步和备份####</p>
-<ul>
-<li>网络备份: 如上所述, 私有的push到bitbucket, 共有的到github</li>
-</ul>
-<ul>
-<li>本地备份: 备份到TrueCrypt加密过的U盘中</li>
-<li>##库##</li>
-</ul>
-<p>Win7的库是很棒的设计, 它本身没什么值得一提的功能, 但是告诉用户一个整理自己文件的基本分类法, 即使你把文件像我上面说的一样乱放, 它也能在一定程度上帮助你弄清楚自己的文件结构. 但这个功能没什么人用…</p>
-<p>最好在把库的位置修改到D盘下, 这样就把全部的文件操作局限在D盘, 移动起来很方便.</p>
-<p>这是我的D盘, 可以看出它是按照库的形式来管理的, Audio对应我的音乐库, Document对应我的文档.<br><img src="http://icylogic.qiniudn.com/image/manage-files/D.png" alt=""></p>
-<p>###Image###</p>
-<p><img src="http://icylogic.qiniudn.com/image/manage-files/Image.png" alt=""></p>
-<p>####子文件夹####</p>
-<ul>
-<li>Lightroom文件夹是Lightroom的一些配置和数据库, 放在这里重装系统以后载入即可.</li>
-</ul>
-<ul>
-<li>Photo下是照片, 按年份分文件夹, 但实际上不怎么用资源管理器管, 都是开Lightroom管理文件夹</li>
-</ul>
-<ul>
-<li>Picture是非照片类的图片, 比如各种从网上拖的图片, 其他人拍的照片, 截图等等</li>
-</ul>
-<ul>
-<li>PS下就是PS用的素材和PS项目</li>
-<li>####同步和备份####</li>
-</ul>
-<ul>
-<li>网络备份: 由于文件较大, 用百度云备份和同步</li>
-</ul>
-<ul>
-<li>本地备份: 同时备份到移动硬盘中<br>###Audio###<br><img src="http://icylogic.qiniudn.com/image/manage-files/Audio.png" alt=""></li>
-</ul>
-<p>我一开始是想直接在Audio下放音乐的, 但是还有一些其他文件不应该被混淆到音乐中, 所以这样分一下</p>
-<p>####子文件夹####</p>
-<ul>
-<li>iTunes和Xmusic是iTunes虾米音乐的配置目录, 不管它</li>
-</ul>
-<ul>
-<li>Ringtones是自己做的一些铃声</li>
-</ul>
-<ul>
-<li>CD是整轨的无损音乐, 全部手工整理好cue和封面放在里面</li>
-</ul>
-<ul>
-<li>music就是音乐文件了, 还是一样因为数量比较大, 在几千首歌里找自己想要的歌用文件管理器是找死, 用iTunes管理它, 下载好歌曲到Cache文件夹后配好内置歌词和封面, 修改好ID3后再放到这个文件夹里.<br>####同步和备份####</li>
-</ul>
-<ul>
-<li>网络备份: 还是文件较大, 用百度云</li>
-</ul>
-<ul>
-<li>本地备份: 备份到移动硬盘中<br>###Vedio###</li>
-</ul>
-<p>基本上除了自己剪辑的几个小视频和几个演讲以外什么都没放, 把视频放到笔记本的本地磁盘越来越不可能了, 只能外接移动硬盘或NAS放在1TB\2TB的移动硬盘中, 我现在电影和动漫以及其他视频加起来1TB, 马上又得买新盘….</p>
-<p>###Document###</p>
-<p><img src="http://icylogic.qiniudn.com/image/manage-files/Document.png" alt=""></p>
-<p>当时想用单数, 现在想改回主流用法Documents, 涉及改动比较大, 就算了.</p>
-<p>####子文件夹####</p>
-<p>这比较个人化, 没什么好说的, 我挑几个说</p>
-<ul>
-<li><p>Book 这里面大概有几十书, 是我已经读过或者将要读的书, 我的图书馆Library在D:\Keep文件夹下, 里面有几千本书, 用Calibre管. 不过我一般不在PC上看书, 这个单纯是为了放在</p>
-</li>
-<li><p>Dropbox下可以在各平台看</p>
-</li>
-<li><p>System 放一些跟系统有关的备份, 比如字体, 主题, 某些软件的配置文件, 皮肤等<br>还有My knowledge这些是软件自己生成的目录.</p>
-</li>
-</ul>
-<p>####同步和备份####</p>
-<ul>
-<li>网络备份: Dropbox</li>
-</ul>
-<ul>
-<li>本地备份: 加密的U盘中</li>
-</ul>
-<p>转载于<a href="https://icylogic.net/software/Windows%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html" target="_blank" rel="external">icylogic</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;写一下我在Windows下管理文件的方法&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬盘), D盘用了200+GB, 这意味着我的文件平均在几MB大小, 而大量的小文件是最难管理的. 所以我觉得我的管理方法基本适用于所有情况.&lt;/strong&gt;
-    
-    </summary>
-    
-      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Google换新装了</title>
-    <link href="http://yoursite.com/2015/09/04/%E7%AE%80%E6%B4%81%E3%80%81%E5%A4%9A%E5%BD%A9%E5%92%8C%E5%8F%8B%E5%A5%BD%EF%BC%9AGoogle%E6%8D%A2%E6%96%B0%E8%A3%85%E4%BA%86/"/>
-    <id>http://yoursite.com/2015/09/04/简洁、多彩和友好：Google换新装了/</id>
-    <published>2015-09-04T10:53:38.000Z</published>
-    <updated>2015-09-12T22:07:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>简洁、多彩和友好：Google换新装了<br><img src="http://image.3001.net/images/20150902/14411663154806.gif!small" alt=""><br>谷歌于北京时间9月2日零点公布新的Logo，虽然新的标识依然是一组文字标识，但最大的区别在于开始使用无衬线字体，这样的效果看上去更具有现代感和灵动感。</p>
-<p>这一次的更新带来了许多新的特性。<br>一些像彩色Google话筒图标的新元素可以帮助你识别并与Google进行互动，不论你正在交谈、轻击鼠标还是打字。同时，Google告别了蓝色的小“g”图标，替换为与整体标志相统一的符号。</p>
-<p><img src="http://ww3.sinaimg.cn/large/5e0fba19gw1evny1wktd2g20zk0k01ho.gif" alt=""></p>
-<p>消息来源：<a href="http://googlechinablog.blogspot.jp/" target="_blank" rel="external">谷歌黑板报（中文）</a>，视频及字幕来源：<a href="https://www.youtube.com/user/Google/" target="_blank" rel="external">谷歌的Youtube主页</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简洁、多彩和友好：Google换新装了&lt;br&gt;&lt;img src=&quot;http://image.3001.net/images/20150902/14411663154806.gif!small&quot; alt=&quot;&quot;&gt;&lt;br&gt;谷歌于北京时间9月2日零点公布新的Logo，虽然新的标识依
-    
-    </summary>
-    
-      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>葱课文案</title>
-    <link href="http://yoursite.com/2015/09/03/%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%96%87%E6%A1%88/"/>
-    <id>http://yoursite.com/2015/09/03/第一个文案/</id>
-    <published>2015-09-03T12:12:57.000Z</published>
-    <updated>2015-09-12T22:07:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>当你老了，头白了，睡意昏沉， </p>
-<p>炉火旁打盹，请打开你的Macbook， </p>
-<p>慢慢点击，用Markdown敲击出你过去眼神的柔和， </p>
-<p>用Premiere剪辑它们昔日浓重的阴影；<br><a id="more"></a><br>　　<br>多少人仰慕你PPT中青春欢畅的时辰， </p>
-<p>爱慕你的美丽，</p>
-<p>没有Ps的假意 ，只有Onenote记录下的真心，</p>
-<p>只有一个人爱你那朝圣者的灵魂，</p>
-<p>用SPSS统计出你一点零一夜的祷告，</p>
-<p>爱你衰老了的脸上痛苦的皱纹； </p>
-<p>　　 </p>
-<p>垂下头来，在红光闪耀的炉子旁， </p>
-<p>C语言依然在诉说那曾经的享乐，</p>
-<p>凄然地轻轻诉说那爱情的消逝， </p>
-<p>AE还是在忠实渲染情爱的痴狂，</p>
-<p>在头顶的山上它缓缓踱着步子， </p>
-<p>在一群星星中间隐藏着脸庞，</p>
-<p>却始终逃不脱Google的搜索；   </p>
-<p>这以繁星为其火花的隐形火焰究竟是什么？</p>
-<p>生如葱课般绚烂，</p>
-<p>死如Office般尽责。</p>
-<div><br><img src="http://img4.duitang.com/uploads/item/201202/26/20120226143528_QQTTS.jpg" width="400" height="300" align="center"><br></div>
-
-
-<p>葱课邀您来学习谱写人生的工具。</p>
-<p>以下工具可以写出不同的绚烂人生，你选择怎样的人生过活呢？</p>
-<p>○Macbook\C语言编程人生</p>
-<p>○Markdown编辑人生</p>
-<p>○Ps\Pr\Ai\Ae设计人生</p>
-<p>○SPSS\Chrome计算人生</p>
-<p>○Office\Visio高效人生</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;当你老了，头白了，睡意昏沉， &lt;/p&gt;
-&lt;p&gt;炉火旁打盹，请打开你的Macbook， &lt;/p&gt;
-&lt;p&gt;慢慢点击，用Markdown敲击出你过去眼神的柔和， &lt;/p&gt;
-&lt;p&gt;用Premiere剪辑它们昔日浓重的阴影；&lt;br&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>别让脆弱的心“恋”上你</title>
-    <link href="http://yoursite.com/2015/08/27/%E5%88%AB%E8%AE%A9%E8%84%86%E5%BC%B1%E7%9A%84%E5%BF%83%E2%80%9C%E6%81%8B%E2%80%9D%E4%B8%8A%E4%BD%A0/"/>
-    <id>http://yoursite.com/2015/08/27/别让脆弱的心“恋”上你/</id>
-    <published>2015-08-27T14:14:09.000Z</published>
-    <updated>2015-09-12T22:07:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>年轻人普遍认为，自己年轻，身体很健康，心梗之类的疾病肯定与自己无缘。<strong>诱发年轻人心梗的因素中，家族史、熬夜、抽烟以及酗酒，再加上紧张、焦虑情绪都可能成为罪魁祸首。而且由于年轻人对自身健康的关注相对较少，一旦发生心梗往往病情要比老年人更为严重，特别容易猝死。</strong><br><a id="more"></a><br>临床上最常见的猝死是“心源性猝死”（SCD），即是由各种心脏原因引起的，以意识丧失为先导的自然死亡。一旦怀疑晕倒的患者是心脏性猝死，最重要的是立刻为患者实施心肺复苏解除心跳骤停的危急情况。然而，由于心脏本身病变的客观存在，即使患者能躲过一次危机，也很可能会继续发生第二、第三次心脏骤停。因此，对这一类患者来说，预防猝死显得尤其重要。</p>
-<h2 id="问题1-：哪些患者属于心脏性猝死高危人群"><a href="#问题1-：哪些患者属于心脏性猝死高危人群" class="headerlink" title="问题1 ：哪些患者属于心脏性猝死高危人群?"></a>问题1 ：哪些患者属于心脏性猝死高危人群?</h2><p><em>√心脏功能低下（左室射血分数低）<br>√冠心病、心肌梗死后<br>√曾经发生过心脏骤停或室速事件<br>√有心脏骤停家族史<br>√扩张型心肌病伴心力衰竭（缺血性/非缺血性）<br>√遗传异常：长Q-T综合征、Brugada综合征 </em></p>
-<h2 id="问题2-：哪些危险因素增加猝死风险"><a href="#问题2-：哪些危险因素增加猝死风险" class="headerlink" title="问题2 ：哪些危险因素增加猝死风险?"></a>问题2 ：哪些危险因素增加猝死风险?</h2><p>第1，过度劳累。经常熬夜会使人的交感神经以及副交感神经处于功能失调的状态；吃饭、作息不规律会引起低血糖低血钾，导致心律不齐，这是引发心源性猝死的重要原因。<br>第2，吸烟喝酒。吸烟的人发生心肌梗死的风险是不吸烟人的3倍。酒精也能让心率加快、血压升高，诱发心脏病发作。<br>第3，压力大。焦虑、高压、惊恐、抑郁等情绪可导致高血压、冠心病等，还会增加心律失常、血管痉挛的风险，甚至诱发猝死。<br>第4，肥胖。心血管病最爱肥胖人群。肥胖人群几乎把所有的心血管疾病危险因素都占全了，而且合并冠心病时容易发生心肌梗死和猝死。<br>第5，三高。高血脂、高血压、高血糖都会损伤血管内皮，使血液变稠，形成粥样硬化斑块，一旦破裂，就会形成血栓碎块堵塞血管，引发心肌缺血、心绞痛、心肌梗死等。</p>
-<h2 id="问题3-：出现哪些不适需要注意？"><a href="#问题3-：出现哪些不适需要注意？" class="headerlink" title="问题3 ：出现哪些不适需要注意？"></a>问题3 ：出现哪些不适需要注意？</h2><p>大多数的心源性猝死者在事发前会有前兆，出现这些前兆就要高度警惕。许多心脏性猝死者在发生心脏骤停前，有数天或数周甚至数月的相关症状，如心跳不规律、头晕、胸闷、极度疲乏及其它非特异性症状，患者对此应引起重视。但这些前驱症状并非心源性猝死所特有，很容易和其他疾病的症状相混淆，因此当您有上述表现时，应及时寻求专业人员的帮助，并了解相关知识提早预防。<br>问题4 ：碰到疑似心源性猝死的病人我们该怎么办？<br>患者主要表现是意识丧失，心跳呼吸停止，皮肤出现紫绀。心脏骤停后10分钟，人体将达到生命的极限，在这段时间里，每延迟一分钟，会降低10%的希望。一旦发生心源性猝死，在场人员必须立即就地抢救，呼叫120并及时送往附近医院进行救治。若超过5分钟仍未施行有效的心肺复苏，病人很有可能失去生存的机会。</p>
-<h2 id="现在就开始防范"><a href="#现在就开始防范" class="headerlink" title="现在就开始防范"></a>现在就开始防范</h2><p>猝死并非不可预防，关键是有没有预防的意识和知识。从现在开始，去了解心血管病家族史，了解自身血管状况；每年一次体检，关注体重、血脂、血压、心电图等重要指标；减少熬夜、不吸烟酗酒；重视调节紧张、焦虑的工作及生活心情；从年轻开始关注养生保健，千万别让脆弱的心早早“恋”上你。<br>傅国胜主任强调说，针对几类高发人群仅仅在医院做常规的菜单式检查远不够，体检的主要项目为运动平板、冠脉CT、心脏B超、24小时动态心电图，通过检查筛选出高危人群，并进行针对性的治疗。 </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;年轻人普遍认为，自己年轻，身体很健康，心梗之类的疾病肯定与自己无缘。&lt;strong&gt;诱发年轻人心梗的因素中，家族史、熬夜、抽烟以及酗酒，再加上紧张、焦虑情绪都可能成为罪魁祸首。而且由于年轻人对自身健康的关注相对较少，一旦发生心梗往往病情要比老年人更为严重，特别容易猝死。&lt;/strong&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="医学" scheme="http://yoursite.com/tags/%E5%8C%BB%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>读进化心理学小感</title>
     <link href="http://yoursite.com/2015/08/14/%E8%AF%BB%E8%BF%9B%E5%8C%96%E5%BF%83%E7%90%86%E5%AD%A6%E5%B0%8F%E6%84%9F/"/>
     <id>http://yoursite.com/2015/08/14/读进化心理学小感/</id>
@@ -968,56 +710,6 @@
     </summary>
     
       <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Rime输入法初体验</title>
-    <link href="http://yoursite.com/2015/08/11/Rime%E8%BE%93%E5%85%A5%E6%B3%95%E5%88%9D%E4%BD%93%E9%AA%8C/"/>
-    <id>http://yoursite.com/2015/08/11/Rime输入法初体验/</id>
-    <published>2015-08-11T11:19:01.000Z</published>
-    <updated>2015-09-12T22:07:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>Rime</strong>是一款开源的输入法，可以提供个性化的输入体验，如果你是一名极客，大可修改其源代码按照自己的习惯进行设定，只是需要折腾一番。该输入法官网为<a href="http://rime.im/" target="_blank" rel="external">Rime</a>，点击即可查看。<br>将其特点概括起来就是：<br><strong>聪明的输入法懂我心意。</strong><br><a id="more"></a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>下载点击<a href="http://rime.im/download/" target="_blank" rel="external">Rime下载页面</a><br>下载、安装完成后，试试：<br>按组合键 <em>Ctrl+`</em> 唤出输入方案选单，由此调整 Rime 输入法最常用的选项。<br>与 Rime 一同发行的输入方案有：<br><em>朙月拼音、语句流、仓颉、地球拼音、注音、速成、五笔、双拼、粤拼、吴语、中古汉语拼音、五笔画、Emoji、国际音标、宫保拼音……</em><br>您可从方案选单切换到朙月拼音、仓颉等默认启用的输入方案。</p>
-<h2 id="演示"><a href="#演示" class="headerlink" title="演示"></a>演示</h2><p>输入方式<br>「幹」「干」「乾」涇渭分明。<br><img src="https://www.byvoid.com/upload/wp/2012/03/rime01.png" alt=""><br>带声调的「地球拼音」。<br><img src="https://www.byvoid.com/upload/wp/2012/03/rime05.png" alt=""><br>粤语拼音。<br><img src="https://www.byvoid.com/upload/wp/2012/03/rime08.png" alt=""></p>
-<p><strong>多种皮肤可选    </strong></p>
-<h2 id="作者"><a href="#作者" class="headerlink" title="作者"></a>作者</h2><p><strong>弓辰</strong>，号<strong>佛振</strong>，出身地是河南郑州以北十里弓家寨，在北平做码农。佛振是「Rime／中州韵」输入法引擎的开发者，它不仅仅是一个输入法，也是一个输入法算法框架，这一套算法支持了拼音、双拼、注音、五笔、仓颉等所有音码和形码输入法。Rime还支持了许多种方言拼音，如吴语、粤语，甚至中古汉语。<br>这是他的微博<a href="http://weibo.com/lotem" target="_blank" rel="external">佛振</a><br>以下为该输入法输入演示：</p>
-<embed src="http://player.youku.com/player.php/sid/XOTE0ODg4ODYw/v.swf" allowfullscreen="true" quality="high" width="480" height="400" align="middle" allowscriptaccess="always" type="application/x-shockwave-flash">]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;Rime&lt;/strong&gt;是一款开源的输入法，可以提供个性化的输入体验，如果你是一名极客，大可修改其源代码按照自己的习惯进行设定，只是需要折腾一番。该输入法官网为&lt;a href=&quot;http://rime.im/&quot;&gt;Rime&lt;/a&gt;，点击即可查看。&lt;br&gt;将其特点概括起来就是：&lt;br&gt;&lt;strong&gt;聪明的输入法懂我心意。&lt;/strong&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="软件" scheme="http://yoursite.com/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-      <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>科目三</title>
-    <link href="http://yoursite.com/2015/08/10/%E7%A7%91%E7%9B%AE%E4%B8%89/"/>
-    <id>http://yoursite.com/2015/08/10/科目三/</id>
-    <published>2015-08-10T10:20:00.000Z</published>
-    <updated>2015-09-12T22:07:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这已经是第二次考科目三，我告诉自己不能再拖下去了，驾照这个事情要快快完结掉。平时开开我也觉得自己开得还是不错的，心里却始终有一种不详的预感。从早上十点一直等到下午三点屏幕上才出现我的名字，这样漫长的等待伴随着的是我是今天最后一个在转塘枫华路口考试的学员，这样子的我自己是有了特别的待遇，安全员漫不经心，监考的教官也是一副急着就要下班的样子，似乎没有可以体会我那种即将迎来一个挑战的心情。我依然习惯性地干呕了一下，我很难受，但我依然跑向了考试的八号车。<br><a id="more"></a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;安全员说话很急，有点不着边际，我自己系好安全带，打开转向灯，轻轻放开离合器，似乎是稳稳地上路了，转过十字路口，直线行驶也是比平常稳了许多，安全员让我迅速闯过两个红灯，似乎很急地做了转向，到了终点。听到：考试合格。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这时候，我的心里是复杂的，只想大骂一句：<strong>XXX，可不可以把300元的保险费还给我？！</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;考驾照，就是一个微型而典型的中国社会。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;这已经是第二次考科目三，我告诉自己不能再拖下去了，驾照这个事情要快快完结掉。平时开开我也觉得自己开得还是不错的，心里却始终有一种不详的预感。从早上十点一直等到下午三点屏幕上才出现我的名字，这样漫长的等待伴随着的是我是今天最后一个在转塘枫华路口考试的学员，这样子的我自己是有了特别的待遇，安全员漫不经心，监考的教官也是一副急着就要下班的样子，似乎没有可以体会我那种即将迎来一个挑战的心情。我依然习惯性地干呕了一下，我很难受，但我依然跑向了考试的八号车。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
     
     
       <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
@@ -1148,6 +840,246 @@
     
     
       <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>读冷术</title>
+    <link href="http://yoursite.com/2015/07/23/%E5%86%B7%E8%AF%BB%E6%9C%AF/"/>
+    <id>http://yoursite.com/2015/07/23/冷读术/</id>
+    <published>2015-07-23T11:00:00.000Z</published>
+    <updated>2015-09-12T22:07:40.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么是冷读术？"><a href="#什么是冷读术？" class="headerlink" title="什么是冷读术？"></a>什么是冷读术？</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所谓冷读术，就是 <strong>cold reading</strong>，cold 有着没有准备的意思，reading 有着读心、占心的意思，冷读术就是在在别人没有防备的情况下，甚至第一次见面时看透他人的心思，从而使自己更好与别人交流。经常被心理医生用于辅助心理治疗。<a id="more"></a></p>
+<blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你有让人信服的能力，现在的问题是，你是用这能力控制别人还是帮助别人。</p>
+</blockquote>
+<div align="right"><br>by派翠克•简，摘自《超感警探》<br></div><br><div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/92/924483__brain-teaser_p.jpg" width="600" height="300" align="center"><br></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从接触冷读术到用的相对有效，已经有3个月了，中间有很多事情，我也为它牺牲了很多很多，我重新审视这个技巧，我看见一些以前看不到的问题。我学这些东西（并非只有冷读术，还有进化心理学）其实，是我觉得，我要是能掌握这些东西，我似乎就可以摸到上帝的领域，掌握人意识的变化。但是随着学习的深入，我越来越发现，我有的只是一些技巧而已，和魔术一般。<strong>并非真的有魔力，并非真的能控制别人。</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渐渐地，我才发现，冷读术这种技巧的后果，最可怕的地方，它消磨了人的人性，随着学得越深越发现，离不开它，逐渐的忘了正常的聊天是什么样子，别人认为很了解你，却不知道他们其实一点都不了解你。这就是悲哀，一种孤独感。我会不自觉地看透很多东西，比如我的朋友在撒谎，我发过誓，不对他们用，可是不自觉地看穿他们的谎言。不自觉地在解读他们。</p>
+<h2 id="记忆宫殿"><a href="#记忆宫殿" class="headerlink" title="记忆宫殿"></a>记忆宫殿</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记忆宫殿，是存在的，我就在用，我能清晰的说出一年前的今天我在做什么，见了谁，说了什么，前提是，宫殿要不断地放入记忆并且整理。不放入的记忆是不会被记忆宫殿记录的。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在此之前我需要，解释下人脑的构造，可能有不正确的地方，至少我认为这样解释会更通俗易懂。人脑和计算机一般，有内存，有硬盘，有CPU和GPU。我们要讲的是有关记忆的内存和硬盘。人的内存是及其有限的，你不能同时多任务运行，而且在你运行过多任务后你的内存也会被大量占用，处理下个任务的耐心也会减少。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的内存很少这一点知道了之后，我们来看看我们伟大的大脑——硬盘。有时你不得不感叹造物主的神奇，不得不惊叹人是这个世界的奇迹。<strong>我们的大脑可以记住5亿本书！一个字不差的。</strong>（如果你愿意穷极一生去尝试）也就是硬盘的容量大到让人惊叹。一个人的一辈子除了药物作用的失忆，大部分记忆都被完整的保存下来了，只不过都被没有条理的扔在了黑盒子里。</p>
+<div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/91/914729__brain-cells_p.jpg" width="600" height="300" align="center"><br></div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人的大脑是分成三部分，<strong>脑核，边缘大脑，大脑皮质</strong>。记忆存在与覆盖在大脑皮质之中。记忆的获得与整个大脑的突触的抑制与促进相关。大脑一旦接受刺激神经元就开始产生突起而这些突起和大脑内部的突触相链接产生新的记忆。不断刺激使细胞间联系更加密切。树突不断增多。信息更容易通过，通过记忆不断生成，树突逐渐形成网络，并逐渐完善，人才能举一反三，触类旁通，所以，脑子越用越好使。我们知道了人脑的构成，也知道了记忆如何产生。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我要开始讲记忆宫殿是如何构成的，它是链接记忆的钥匙。你可以把它看成电脑文件夹。人脑的抽象理解，估计大家都听过<strong>艾宾浩斯记忆曲线</strong>（遗忘曲线），我想说那更像是扯淡，虽然扯得很有水准，清晰的记忆源于外界刺激，与反复的重复动作。艾宾浩斯提出的理论就是反复记忆，来提高记忆能力。其实就是废话，一个单词抄一千遍谁都能记住了。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们进入主题，记忆宫殿的构成。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎来到，人类最伟大的圣殿，那便是只属于你的记忆宫殿。<strong>记忆宫殿是基于强烈的外界刺激来构成清晰记忆</strong>这一理论诞生而来。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好了，我们首先需要一座宫殿。而这座宫殿可以是任何地方，条件有两个，一是宽广，二是生动。你可以用你的学校，或者常去的公园。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我再重申一边你的宫殿一定是<strong>广阔且生动</strong>的地点！因为地点不生动就很难嵌入清晰的记忆。不清楚具体如何构建宫殿话，我来先举一个小例子。汉尼拔的记忆宫殿是及其奢华的虚拟房子。派翠克•简的记忆宫殿是儿时父亲常带他去的游乐园。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可以这样构建宫殿，找一个每天都能去的地方，把它的所有地点都走一边，每天回家后，闭上眼去回忆它，回忆每一个你能想到的细节，比如说，你用你的学校，你要回忆到每堵墙的触感，那里有野草，哪里经常有噪音，开门时门把手是什么做的什么颜色，什么花纹。这很重要！越具体越好！你要做的是幻想出所有细节，记住是所有细节，如果你有庭园的话，草的形态，树的样子，触感，纹理。所有的所有。沙发的感觉，什么材质什么纹理、瓷砖的样式等等。</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可能要花很长时间构建它。别为了一时痛快忽略细节，你日后一定会后悔的。</strong>现在你有你的只属于你的宫殿了，宫殿的构建过程可能很漫长，不要着急，一点一点做。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你要做的是闭上你的眼睛幻想自己身处于宫殿之中，在宫殿里走动一下，跳一跳，跑一跑，转一转，去看一看宫殿内的景象。</p>
+<p>当你自己可以任何时候都能自由地进入宫殿后。清晰的记忆源于强烈的外界刺激。你所有的想像就是外界刺激（人脑分不清出现实与幻觉），所以你想像的越真实，你的记忆就越清晰。</p>
+<h2 id="冷读术和记忆宫殿的结合"><a href="#冷读术和记忆宫殿的结合" class="headerlink" title="冷读术和记忆宫殿的结合"></a>冷读术和记忆宫殿的结合</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在你的记忆宫殿里面规划一个区域放置各式各样的的任务，他们是某一类人的典型代表，特征鲜明。自己无聊的时候静下心来迅速进入自己熟知的记忆宫殿，挑选一种类型的人与之交流。反复多次，每天训练。当你联系到了秒进自己记忆宫殿的地步，你就可以迅速看穿一个陌生人。</p>
+<div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/75/754908__brain-right-wallpaper_p.jpg" width="600" height="300" align="center"><br></div>
+
+<p><strong>一切前提在于：你要有足够丰富的阅历！永远不要舍弃接触更多风格类型的人的机会！如果是一样风格的人物，大可不接触！</strong></p>
+<h2 id="附冷读术常用例句"><a href="#附冷读术常用例句" class="headerlink" title="附冷读术常用例句"></a>附冷读术常用例句</h2><p>这些话一旦准确说出，别人就会立马觉得亲近或者反抗以致保持距离。一般而言，强势者会因为被看穿而故作淡定，仍可看出其些许不自然之处；弱势者会表现出亲近或者恐惧。</p>
+<ol>
+<li>外表看起来好像很有自信，但内心有烦躁不安的一面。 </li>
+<li>希望被人喜欢，受认同的欲望太强烈。 </li>
+<li>爱好某种程度的变化和自由，受到约束和限制就会感到不满。 </li>
+<li>一旦喜欢对方，为了迎合他的期待，有时会勉强自己 。</li>
+<li>你曾经因草率决定而失败，如果那时稍微耐心等会，情况会好的多。 </li>
+<li>你因为怕麻烦，有一点拖延该做事的倾向。 </li>
+<li>你曾经后悔自己的决定，每当你犹豫过后的决定，担心自己的决定对与错。</li>
+<li>当你不知所措的时候，你希望询问朋友意见，但你其实内心已有一个想法，只等待一个认同。</li>
+<li>即使有时候，你做事吃力不讨好，但你仍希望自己努力得到别人认同。</li>
+<li>有些时候想，你想独自冷静一下，思考一下，但是你其实心中渴望有人快点关心你。</li>
+<li>其实你知道自己想得到什么，但一直认为没有机会得到，所以一直停滞不前。</li>
+<li>我觉得你呢，不会毫不思索的接受别人的观点，很有自己的主见，不过有时会固执。</li>
+<li>我觉得你遇到遇到不顺心的事情，应该会很好的调整自己，跳出悲伤的。</li>
+<li>你曾经被信任的人背叛，正因如此你与人交往时多少保持一定的距离。你从经验中学到：坦率的相信别人未必是对的，有时候怀疑也是必要的。</li>
+<li>从你工作的内容来看，你对现在的状况感到不满，你觉得没有受到客观且应有的评价。</li>
+<li><strong>家人的事令你担心，多多少少带来压力，你已经做了一切能力所及的事，其他的就是力不从心之处，这时候，让时间来解决是最好的。</strong></li>
+<li>你是个直觉敏锐的人，即使才第一次见面，你也能马上掌握那个人的性格。</li>
+<li>你是个感情丰富的人，但是不善于表达，有时会被人误解或给人冷淡的印象。</li>
+<li>因为你看起来很直率，所以大家对你都没什么顾忌，就算是难听的话也会直说。</li>
+<li>你有时很外向人缘也比较不错，和朋友的关系相处的也比较和睦。但有时你有会比较自闭，有什么心事，或烦恼会自己一个人放在心里面，不愿意告诉别人，会深居简出。</li>
+</ol>
+<div align="right"><br>2015/7/23 16:14<br><br>Content By <a href="http://www.yaoleifly.com" target="_blank" rel="external">姚磊</a>. All Rights Reserved.<br></div>
+
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;什么是冷读术？&quot;&gt;&lt;a href=&quot;#什么是冷读术？&quot; class=&quot;headerlink&quot; title=&quot;什么是冷读术？&quot;&gt;&lt;/a&gt;什么是冷读术？&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;所谓冷读术，就是 &lt;strong&gt;cold reading&lt;/strong&gt;，cold 有着没有准备的意思，reading 有着读心、占心的意思，冷读术就是在在别人没有防备的情况下，甚至第一次见面时看透他人的心思，从而使自己更好与别人交流。经常被心理医生用于辅助心理治疗。
+    
+    </summary>
+    
+    
+      <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>暴雨将至</title>
+    <link href="http://yoursite.com/2015/07/21/%E6%9A%B4%E9%9B%A8%E5%B0%86%E8%87%B3/"/>
+    <id>http://yoursite.com/2015/07/21/暴雨将至/</id>
+    <published>2015-07-20T16:00:00.000Z</published>
+    <updated>2015-09-12T22:07:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>醒来的很早，昨天睡得很迟。强迫症一般地只要睡足<strong>六个半小时</strong>就够了。<a id="more"></a></p>
+<p>工作其实很轻松，自由度很大，谈不上喜欢，但也不是我厌恶的。工作中开点小差，那种愧疚感居然还是那么强烈，哈哈，果然还是一个皮小孩。</p>
+<p>另外，我的考研计划其实就像沙子一样经不住这样的暴雨冲刷，总归自己还是要努力努力。</p>
+<p>过几天就要回武汉了，这样的相见弥足珍贵，我要好好珍惜。</p>
+<p>如果今天下午面试官问我，你觉得现在工作中什么最重要?<br>我会说</p>
+<blockquote>
+<p>连接！连接其他人和世界的能力。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;醒来的很早，昨天睡得很迟。强迫症一般地只要睡足&lt;strong&gt;六个半小时&lt;/strong&gt;就够了。
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>蒋介石和现代中国的奋斗</title>
+    <link href="http://yoursite.com/2015/07/13/%E8%92%8B%E4%BB%8B%E7%9F%B3%E4%B8%8E%E7%8E%B0%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%9A%84%E5%A5%8B%E6%96%97/"/>
+    <id>http://yoursite.com/2015/07/13/蒋介石与现代中国的奋斗/</id>
+    <published>2015-07-13T10:52:33.000Z</published>
+    <updated>2015-09-12T22:07:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>蒋介石作为新儒家青年，冷静、温和、沉稳但天真、中庸，与毛泽东的中国路线之争，殊途同归。将民族主义和中国传统文化作为全国团结之道，引领中国重回大国行列，预先性认为后发国家必有<strong>先威权后民主</strong>的阶段。<a id="more"></a></p>
+<p>引领中国复兴是蒋介石的构想和毛泽东的组织架构，理想状态下将是效率与公平的良好平衡。</p>
+<p>历代中国人追寻的民族富强，无关意识形态，只在于道路之争。</p>
+<p>认清自己所处的时代：<strong>这是一个剧变的时代，一切格局未定。
+</strong></p>
+<h2 id="蒋介石的遗书"><a href="#蒋介石的遗书" class="headerlink" title="蒋介石的遗书"></a>蒋介石的遗书</h2><p>蒋介石的遗书也是耐人寻味:</p>
+<blockquote>
+<p>余自束发以来，即追随总理革命，无时不以耶稣基督与总理信徒自居，无时不为扫除三民主义之障碍，建设民主宪政之国家，坚苦奋斗，近二十余年来，自由基地，日益精实壮大，为期日新月盛，全国军民，全党同志，绝不可因余之不起，而怀忧丧志！务望一致精诚团结，服从本党与政府领导，奉主义为无形之总理，而中正之精神，自必与我同志、同胞长相左右，实践三民主义，复光民族文化，坚守民主阵容，为余毕生之志事，实亦即海内外军民同胞一致的革命职志与战斗决心。唯愿愈益坚此百忍，奋励自强，非达成国民革命之责任，绝不中止；矢勤矢勇，毋怠勿忽。</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;蒋介石作为新儒家青年，冷静、温和、沉稳但天真、中庸，与毛泽东的中国路线之争，殊途同归。将民族主义和中国传统文化作为全国团结之道，引领中国重回大国行列，预先性认为后发国家必有&lt;strong&gt;先威权后民主&lt;/strong&gt;的阶段。
+    
+    </summary>
+    
+      <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大圣归来</title>
+    <link href="http://yoursite.com/2015/07/13/%E5%A4%A7%E5%9C%A3%E5%BD%92%E6%9D%A5/"/>
+    <id>http://yoursite.com/2015/07/13/大圣归来/</id>
+    <published>2015-07-12T23:31:32.000Z</published>
+    <updated>2015-09-12T22:07:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>1999年，西游记动画片上映。</p>
+<p>2015年，大圣归来。</p>
+<p>大圣，16年了，你可知道都过了16年了。<a id="more"></a></p>
+<p>这16年里，我认识日本一个叫鸣人的笨蛋下忍，去年他也当上了村子的火影了。我还认识了一个叫路飞的朋友，还有一个叫柯南的永远长不大的小孩，一个叫坂田银时的混蛋。在美国，还有一个大铁疙瘩叫钢铁侠，有一个拿盾牌的特帅的美国队长，还有蝙蝠侠老爷。</p>
+<p>可是大圣，这16年里你都干嘛去了？</p>
+<p>我猜你回花果山了，吃着大桃子，整天逍遥自在，无拘无束，漫山遍野的猴子猴孙。什么斗战胜佛，那不适合你，我可没忘，你可是齐天大圣！<br>大圣，你可知道当江流儿说：</p>
+<blockquote>
+<p>“齐天大圣孙悟空，身如玄铁，火眼金睛，长生不老还有七十二变！”</p>
+</blockquote>
+<p>的时候，我一下没忍住就哭了出来。大圣，虽然你法印还在，不能腾云驾雾，不能七十二变，也没有那根金箍棒，拔一根毫毛也变不出漫山遍野的美猴王，但我可没忘，这个调皮捣蛋听人唠叨会一脸不耐烦，遇到危险挺身而出身手不凡的猴子，他可是齐天大圣！</p>
+<p>大圣，你可知道你离开了这么多年，我看过多少个翻版的你？所有你的电影，我都买了票跑到了电影院去看，可他们都演不出你。我知道，你就悄悄告诉过六小龄童老师演你的秘诀，可是你知道吗，六小龄童老师也已经56岁了啊，但他还是一遍遍耐心的告诉那些年轻演员孙大圣是什么样，他还来过我们学校，模仿你耍了一次金箍棒。大圣，我们都不像你一样，能长生不老。</p>
+<p>所以大圣，当我在电影院看到你回来的时候，我一个二十多岁的人，还是哭的像个小孩子一样。虽然你被佛祖的法印束缚没了法力，虽然你脸长手长似乎不是那个美猴王。</p>
+<p>但我还是认出来了，那就是你，大圣，你回来了。</p>
+<p>你给江流儿说：“有一天你变得勇敢，坚强。”你可记得你当年也对我们这一群孩子说过？</p>
+<p>你看着江流儿对傻丫头说：“有了齐天大圣保护你，就什么也不怕啦。”你可记得我们曾经买过的那些塑料的美猴王面具，塑料的金箍棒，模仿你耍金箍棒，爬上爬下？</p>
+<p>当你给八戒说：<strong>“老猪，跟我走！</strong>”的时候，你可知道我多兴奋！这不就是我小时候的大圣吗！</p>
+<p>当你在烟雾里现身，背景音乐想起了星爷当年大话西游的背景音乐的时候，我就知道，马上你就要拔出金箍棒，大展神通了。说到大话西游，不知道你看过没有，也是关于你的故事，挺感人的一个改编故事，不过那个在戏里演你的星爷，他也老了。</p>
+<p>大圣，多好你能长生不老，我希望我的孩子以后，也能有一个童年时代的好伙伴，也一个调皮的英雄叫孙悟空，叫美猴王，叫齐天大圣。<br>大圣，在电影院的时候，我见到老爷爷带着孙子看的，见到妈妈带着孩子，每个人脸上的期待和欢喜都是一样的。</p>
+<p>大圣，16年后你回来了。我觉得这16年里，虽然被国产动画坑了一次又一次，但这次回来了，我觉得起码这一次，值。</p>
+<p>大圣，当你在剧里突破法印一身金甲，身后红披风霸气的摇摆的时候，我身边的小孩子突然给他妈妈说：</p>
+<blockquote>
+<p>妈妈，你看，他变身了。</p>
+</blockquote>
+<p>当时我多想给他说：</p>
+<blockquote>
+<p>他没有变身，这就是他，齐天大圣回来了。</p>
+</blockquote>
+<p>转自<a href="http://www.zhihu.com/question/28066166" target="_blank" rel="external">知乎</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1999年，西游记动画片上映。&lt;/p&gt;
+&lt;p&gt;2015年，大圣归来。&lt;/p&gt;
+&lt;p&gt;大圣，16年了，你可知道都过了16年了。
+    
+    </summary>
+    
+      <category term="电影" scheme="http://yoursite.com/categories/%E7%94%B5%E5%BD%B1/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有关爱情</title>
+    <link href="http://yoursite.com/2015/07/12/%E6%9C%89%E5%85%B3%E7%88%B1%E6%83%85/"/>
+    <id>http://yoursite.com/2015/07/12/有关爱情/</id>
+    <published>2015-07-12T15:23:14.000Z</published>
+    <updated>2015-09-12T22:07:42.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>对于这个繁杂的世界，我虽然不再祈求绝对神圣的爱情，但从来没有放弃过对美丽的爱情的追求。<a id="more"></a></p>
+<p>我现在的爱情是美丽的，尽可能不要带进功利的东西，我要极力维护它的纯洁。这样就要求我能够提供一个可控的现实，这需要努力和坚持，我还做的不错。</p>
+<p>金钱是一个不可以逃避的问题，所有美好爱情都需要物质的基础，我知道这也将是我为之努力的目的:</p>
+<blockquote>
+<p>让我爱的人从不为了金钱而奔波。</p>
+</blockquote>
+<p>等我回来认取，云。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于这个繁杂的世界，我虽然不再祈求绝对神圣的爱情，但从来没有放弃过对美丽的爱情的追求。
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>午后随想</title>
+    <link href="http://yoursite.com/2015/07/11/%E5%8D%88%E5%90%8E%E9%9A%8F%E6%83%B3/"/>
+    <id>http://yoursite.com/2015/07/11/午后随想/</id>
+    <published>2015-07-11T06:12:26.000Z</published>
+    <updated>2015-09-12T22:07:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个时间点，我将要踏上回家的路。<br>外面是台风间歇性的发作，各种奇怪的风和新奇的雨开始交织，现在是风雨的天下。<a id="more"></a></p>
+<p>这就好像自己现在的状况，感觉自己好像可以做好所有的事情，其实连照顾好自己的生活起居就已经很勉强了。有时候按时吃饭睡觉这样的事情我也做不好，好像还是一个孩子，始终在徘徊。我就不知道这一切的根源在哪里，似乎有一种力量将你慢慢推向舞台，场下都是观众，它们睁大了眼睛来看你的笑话。你问我为什么不是表演？因为人生就是一场喜剧，它本应该是幽默的，现实却总是让它是搞笑的。搞笑不是没营养，而是只会让人傻笑，笑过之后索然无味。</p>
+<p>快要出发了，外面有台风。我的雨伞可以撑起一片天空，双臂可以背起书包，对，就是书包！因为不管到哪里，我还是热爱文字的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这个时间点，我将要踏上回家的路。&lt;br&gt;外面是台风间歇性的发作，各种奇怪的风和新奇的雨开始交织，现在是风雨的天下。
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   

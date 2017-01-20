@@ -1,0 +1,1122 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="心得," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="某C的白板" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="写一下我在Windows下管理文件的方法
+本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows下管理文件的方法">
+<meta property="og:url" content="http://yoursite.com/2015/09/13/Windows下管理文件的方法/index.html">
+<meta property="og:site_name" content="某C的白板">
+<meta property="og:description" content="写一下我在Windows下管理文件的方法
+本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/all.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Cache.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Portable.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Develop.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/AHK.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/D.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Image.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Audio.png">
+<meta property="og:image" content="http://icylogic.qiniudn.com/image/manage-files/Document.png">
+<meta property="og:updated_time" content="2015-09-13T16:06:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Windows下管理文件的方法">
+<meta name="twitter:description" content="写一下我在Windows下管理文件的方法
+本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬">
+<meta name="twitter:image" content="http://icylogic.qiniudn.com/image/manage-files/all.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/09/13/Windows下管理文件的方法/"/>
+
+
+
+
+
+  <title> Windows下管理文件的方法 | 某C的白板 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90689604-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">某C的白板</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+    
+      <p class="site-subtitle">写作/清单</p>
+    
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/09/13/Windows下管理文件的方法/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="从未表白的石头">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="某C的白板">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="某C的白板" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Windows下管理文件的方法
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-09-13T15:07:17+08:00">
+                2015-09-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/软件/" itemprop="url" rel="index">
+                    <span itemprop="name">软件</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/09/13/Windows下管理文件的方法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/09/13/Windows下管理文件的方法/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>写一下我在Windows下管理文件的方法</p>
+<p><strong>本文写给, 用Windows但没有形成自己的一套管理文件的逻辑的人. 特别是需要管理相当大数量的文件的人, 比如我的非系统和应用程序类文件全部在D盘, 现在有22万个左右, 这些文件的特征是: 基本都是有用的, 没什么垃圾文件, 因为我有定期清理不需要文件的习惯; 都是琐碎的小文件, 我的硬盘里几乎没有视频 (这是最好管的文件了, 我把它们放在大容量移动硬盘), D盘用了200+GB, 这意味着我的文件平均在几MB大小, 而大量的小文件是最难管理的. 所以我觉得我的管理方法基本适用于所有情况.</strong><a id="more"></a></p>
+<p>我的两个分区, D盘全部目录, 最重要的两个文件夹:桌面和我的文档<br><img src="http://icylogic.qiniudn.com/image/manage-files/all.png" alt=""></p>
+<p>从大往小说.</p>
+<p>下次再补充一些工具介绍, 加强资源管理的比如listary, clover, everything, TC等. 另外资源管理器的能力有限, 如果是比较单一的文件种类最好用相应库管理软件, 比如音乐用iTunes, 图书用Calibre, 代码用Git.</p>
+<p>##分区##</p>
+<p>我觉得现在没有把本地磁盘分区分到2个以上的必要, 把系统和所有程序装在C盘, 剩下都放在D盘, 相对于多分区的好处是显然的, 随便说两个:</p>
+<ul>
+<li>在同一个分区之内剪切/移动文件是瞬间完成的, 原理想一下就知道, 它只需要改几个位置的某些字符串. 但在分区之间剪切或复制内容的时候, 那就是实实在在地创建新文件.</li>
+</ul>
+<ul>
+<li>多分区的用户往往思维混乱, 比如他们把D盘起个名字叫工作, E盘起个名字叫娱乐, 发现E盘放不下了, 就搞个F盘起个名字叫电影, 各分区之间经常有很多功能重复的目录, 结果就是一个文件放这里也可以, 放哪里也可以, 那么要找文件的时候, 也就是从这里找也可以, 从那里找也可以, [[这是任何工具都帮不了你的问题,everything,]] listary什么的都帮不了. 将系统和应用程序以外文件全部放在一个盘, 才能随心所欲地管理文件.</li>
+</ul>
+<p>综上所述, 把磁盘分为两个</p>
+<p>一个装系统, 比如C盘, 大多数情况下, 不应该直接操作C盘, C盘有改动对于一般用户来说只能是以下几个操作: 安装和卸载程序, 重装系统.<br>一个放其他东西, 比如D盘, 因为C盘不需要我们操心, 所以本文以下基本都是在说D盘的文件管理</p>
+<p>##D盘:##</p>
+<p>###Cache###</p>
+<p><img src="http://icylogic.qiniudn.com/image/manage-files/Cache.png" alt=""></p>
+<p>这是很重要的文件夹, 所有浏览器和下载工具的下载目录全部设定到这个文件夹, 同时把这个文件夹设定为桌面文件夹 (即桌面上显示的就是这个文件夹的内容, 看图就清楚了), 平时下载的文件, 写代码时需要用来测试的文件, 还有其他临时文件全部在这个文件夹, 现在它只有一个文件因为我整理过了, 平时是可以很乱的, 它提醒你赶紧把这些玩意处理掉, 需要保留的就把它剪切到相应位置, 需要删的就shift+delete.</p>
+<p>###WindowsImageBackup###</p>
+<p>这是Win7自带还原生成的, 这个看个人习惯, 我之前用Comodo Time Machine, 尽管很快, 但是会造成一些问题, 所以我还是用回win自带的, 注意把备份周期设置地长一点, 否则会占用大量空间</p>
+<p>###Portable&amp;Bin###<br><img src="http://icylogic.qiniudn.com/image/manage-files/Portable.png" alt=""></p>
+<p>翻译成中文就是绿色软件, 绿色软件(Portable Software)的初衷是Portable, 装在U盘里到处都能用(因此我用Dropbox同步和备份这个文件夹), 但我看中的是:</p>
+<ul>
+<li>Portable Software 往往是开源的, 免费的, 安全的, 小巧的</li>
+</ul>
+<ul>
+<li>它可以在你无数次重装系统后, 无需安装即可打开, 并且和linux一样保留了用户习惯, 无需重新配置, 还是熟悉的配方.<br>所以建议能用Portable的都用.</li>
+</ul>
+<p>一般来说很多软件自己会有Portable Ver供下载, 也会有一些人专门把软件绿色化, 但一定要找安全的来源, 以下几个是常用的找绿色软件的网站</p>
+<ul>
+<li><a href="http://www.portablesoft.org/" target="_blank" rel="external">精品绿色便携软件</a></li>
+</ul>
+<ul>
+<li><a href="http://www.appinn.com/" target="_blank" rel="external">小众软件</a></li>
+</ul>
+<ul>
+<li><a href="http://portableapps.com/" target="_blank" rel="external">PortableApps</a></li>
+</ul>
+<p>Bin目录则是linux下的一些工具</p>
+<p>####子文件夹####</p>
+<p>单纯的列表, 每个软件一个文件夹</p>
+<p>####同步和备份####</p>
+<p>网络备份: Dropbox<br>本地备份: 备份到TrueCrypt加密过的U盘中</p>
+<p>###Develop###</p>
+<p><img src="http://icylogic.qiniudn.com/image/manage-files/Develop.png" alt=""></p>
+<p>原来我是把自己的代码放在Documents\Develop下的, 但是后来我把它单独拿出来了, 原因是, 我的Document文件夹是用Dropbox同步的, 常年开着Dropbox, 每改几行一保存一编译就同步一次各种代码中间文件编译结果等实在太蛋疼了, 尽管我也可以用某些方法让它不同步这个目录, 但还是拿出来方便一些. 而且其他文档我需要Dropbox的版本控制, 但那是针对一般文档, 比起git等专用于代码的版本控制系统来说, Dropbox就显得弱爆了, 我不愿意Dropbox把我的git目录也一起同步上去, 所以我的代码都是push到github或者bitbucket作为备份.</p>
+<p>####子文件夹####</p>
+<p>具体分类是这样的, 如果是针对平台的开发, 就放在对应平台文件夹下, 比如Windows/ARM等, 如果没什么特殊平台, 用同一种语言开发, 就放在对应语言文件夹下, 比如AHK/JAVA等</p>
+<p>每个文件夹下如图所示</p>
+<p><img src="http://icylogic.qiniudn.com/image/manage-files/AHK.png" alt=""></p>
+<p>分Documents和Projects文件夹, 一些还有Library/SDK文件夹, Documents就是对应文档, 比如j2se 的API文档等, Projects就是一个个项目目录了, 都用git管理.</p>
+<p>####同步和备份####</p>
+<ul>
+<li>网络备份: 如上所述, 私有的push到bitbucket, 共有的到github</li>
+</ul>
+<ul>
+<li>本地备份: 备份到TrueCrypt加密过的U盘中</li>
+<li>##库##</li>
+</ul>
+<p>Win7的库是很棒的设计, 它本身没什么值得一提的功能, 但是告诉用户一个整理自己文件的基本分类法, 即使你把文件像我上面说的一样乱放, 它也能在一定程度上帮助你弄清楚自己的文件结构. 但这个功能没什么人用…</p>
+<p>最好在把库的位置修改到D盘下, 这样就把全部的文件操作局限在D盘, 移动起来很方便.</p>
+<p>这是我的D盘, 可以看出它是按照库的形式来管理的, Audio对应我的音乐库, Document对应我的文档.<br><img src="http://icylogic.qiniudn.com/image/manage-files/D.png" alt=""></p>
+<p>###Image###</p>
+<p><img src="http://icylogic.qiniudn.com/image/manage-files/Image.png" alt=""></p>
+<p>####子文件夹####</p>
+<ul>
+<li>Lightroom文件夹是Lightroom的一些配置和数据库, 放在这里重装系统以后载入即可.</li>
+</ul>
+<ul>
+<li>Photo下是照片, 按年份分文件夹, 但实际上不怎么用资源管理器管, 都是开Lightroom管理文件夹</li>
+</ul>
+<ul>
+<li>Picture是非照片类的图片, 比如各种从网上拖的图片, 其他人拍的照片, 截图等等</li>
+</ul>
+<ul>
+<li>PS下就是PS用的素材和PS项目</li>
+<li>####同步和备份####</li>
+</ul>
+<ul>
+<li>网络备份: 由于文件较大, 用百度云备份和同步</li>
+</ul>
+<ul>
+<li>本地备份: 同时备份到移动硬盘中<br>###Audio###<br><img src="http://icylogic.qiniudn.com/image/manage-files/Audio.png" alt=""></li>
+</ul>
+<p>我一开始是想直接在Audio下放音乐的, 但是还有一些其他文件不应该被混淆到音乐中, 所以这样分一下</p>
+<p>####子文件夹####</p>
+<ul>
+<li>iTunes和Xmusic是iTunes虾米音乐的配置目录, 不管它</li>
+</ul>
+<ul>
+<li>Ringtones是自己做的一些铃声</li>
+</ul>
+<ul>
+<li>CD是整轨的无损音乐, 全部手工整理好cue和封面放在里面</li>
+</ul>
+<ul>
+<li>music就是音乐文件了, 还是一样因为数量比较大, 在几千首歌里找自己想要的歌用文件管理器是找死, 用iTunes管理它, 下载好歌曲到Cache文件夹后配好内置歌词和封面, 修改好ID3后再放到这个文件夹里.<br>####同步和备份####</li>
+</ul>
+<ul>
+<li>网络备份: 还是文件较大, 用百度云</li>
+</ul>
+<ul>
+<li>本地备份: 备份到移动硬盘中<br>###Vedio###</li>
+</ul>
+<p>基本上除了自己剪辑的几个小视频和几个演讲以外什么都没放, 把视频放到笔记本的本地磁盘越来越不可能了, 只能外接移动硬盘或NAS放在1TB\2TB的移动硬盘中, 我现在电影和动漫以及其他视频加起来1TB, 马上又得买新盘….</p>
+<p>###Document###</p>
+<p><img src="http://icylogic.qiniudn.com/image/manage-files/Document.png" alt=""></p>
+<p>当时想用单数, 现在想改回主流用法Documents, 涉及改动比较大, 就算了.</p>
+<p>####子文件夹####</p>
+<p>这比较个人化, 没什么好说的, 我挑几个说</p>
+<ul>
+<li><p>Book 这里面大概有几十书, 是我已经读过或者将要读的书, 我的图书馆Library在D:\Keep文件夹下, 里面有几千本书, 用Calibre管. 不过我一般不在PC上看书, 这个单纯是为了放在</p>
+</li>
+<li><p>Dropbox下可以在各平台看</p>
+</li>
+<li><p>System 放一些跟系统有关的备份, 比如字体, 主题, 某些软件的配置文件, 皮肤等<br>还有My knowledge这些是软件自己生成的目录.</p>
+</li>
+</ul>
+<p>####同步和备份####</p>
+<ul>
+<li>网络备份: Dropbox</li>
+</ul>
+<ul>
+<li>本地备份: 加密的U盘中</li>
+</ul>
+<p>转载于<a href="https://icylogic.net/software/Windows%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86.html" target="_blank" rel="external">icylogic</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>谢谢大爷,您嘞~~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/path/to/wechat.png" alt="从未表白的石头 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/path/to/alipay.jpg" alt="从未表白的石头 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/心得/" rel="tag"># 心得</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/09/04/简洁、多彩和友好：Google换新装了/" rel="next" title="Google换新装了">
+                <i class="fa fa-chevron-left"></i> Google换新装了
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/09/14/beauty/" rel="prev" title="Beauty">
+                Beauty <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/09/13/Windows下管理文件的方法/"
+           data-title="Windows下管理文件的方法" data-url="http://yoursite.com/2015/09/13/Windows下管理文件的方法/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="从未表白的石头" />
+          <p class="site-author-name" itemprop="name">从未表白的石头</p>
+          <p class="site-description motion-element" itemprop="description">忠实地思考着</p>
+        </div>
+        <nav class="site-state motion-element">
+        
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">43</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yaoleifly" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/yaoleifly" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3150953875/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/jemaintien" target="_blank" title="Google+">
+                  
+                    <i class="fa fa-fw fa-google"></i>
+                  
+                  Google+
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://sspai.com/" title="少数派" target="_blank">少数派</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.producthunt.com/" title="Product Hunt" target="_blank">Product Hunt</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.v2ex.com/?tab=creative" title="V2EX创意" target="_blank">V2EX创意</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://next.36kr.com/posts" title="NEXT" target="_blank">NEXT</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.pmcaff.com/" title="PMCAFF" target="_blank">PMCAFF</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://ruanyf.github.io/survivor/index.html" title="未来世界的幸存者" target="_blank">未来世界的幸存者</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">从未表白的石头</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yaoleifly"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    
+    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+      search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+      $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
+                    }
+
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
+        }
+      });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

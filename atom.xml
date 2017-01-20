@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-20T06:41:03.870Z</updated>
+  <updated>2017-01-20T06:56:57.350Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://yoursite.com/2017/01/29/%E8%BF%87%E4%B8%80%E7%A7%8D%E6%B2%89%E6%B5%B8%E7%9A%84%E4%BA%BA%E7%94%9F/"/>
     <id>http://yoursite.com/2017/01/29/过一种沉浸的人生/</id>
     <published>2017-01-29T05:14:00.000Z</published>
-    <updated>2017-01-20T06:41:03.870Z</updated>
+    <updated>2017-01-20T06:56:57.350Z</updated>
     
     <content type="html"><![CDATA[<p> 「本文参与 少数派2016年度征文」</p>
 <p>我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 <a href="https://en.wikipedia.org/wiki/Jacqueline_Novogratz" target="_blank" rel="external">Jacqueline Novogratz</a> 的TED演讲 <a href="https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion" target="_blank" rel="external">Inspiring a life of immersion</a> 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。</p>
-<p>从小的教育不断向我灌输一个<strong>狡黠</strong>的观点：We should live a life of success。它不是错误的，但也不是完全正确的，但隐约觉得这是在将我引向欲望的沟壑。</p>
+<p>从小的教育不断向我灌输一个<strong>狡黠</strong>的观点：We should live a life of success。它不是错误的，但也不是完全正确的，但隐约觉得这是在将我引向欲望的沟壑。<a id="more"></a> </p>
 <p>罗伯特·肯尼迪曾说：</p>
 <blockquote>
 <p>Few of us have the greatness to bend history itself, but each of us can work to change a small portion of events.</p>
@@ -90,7 +90,8 @@
     <summary type="html">
     
       &lt;p&gt; 「本文参与 少数派2016年度征文」&lt;/p&gt;
-&lt;p&gt;我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 &lt;a href=&quot;https://en.wikipedia.org/wiki/Jacqueline_Novogratz&quot; target=&quot;_blank&quot; re
+&lt;p&gt;我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 &lt;a href=&quot;https://en.wikipedia.org/wiki/Jacqueline_Novogratz&quot;&gt;Jacqueline Novogratz&lt;/a&gt; 的TED演讲 &lt;a href=&quot;https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion&quot;&gt;Inspiring a life of immersion&lt;/a&gt; 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。&lt;/p&gt;
+&lt;p&gt;从小的教育不断向我灌输一个&lt;strong&gt;狡黠&lt;/strong&gt;的观点：We should live a life of success。它不是错误的，但也不是完全正确的，但隐约觉得这是在将我引向欲望的沟壑。
     
     </summary>
     
@@ -104,13 +105,51 @@
   </entry>
   
   <entry>
+    <title>ToDo-List</title>
+    <link href="http://yoursite.com/2017/01/20/ToDo-List/"/>
+    <id>http://yoursite.com/2017/01/20/ToDo-List/</id>
+    <published>2017-01-20T06:58:20.000Z</published>
+    <updated>2017-01-20T07:00:29.752Z</updated>
+    
+    <content type="html"><![CDATA[<ul>
+<li>[ ] 微信小程序外包</li>
+<li>[ ] 给猪猪准备礼物</li>
+<li>[ ] 打扫家中卫生</li>
+<li>[ ] 修台式电脑</li>
+<li>[ ] 修热水器</li>
+<li>[ ] 给奶奶新年礼物</li>
+<li>[x] 建成博客</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;[ ] 微信小程序外包&lt;/li&gt;
+&lt;li&gt;[ ] 给猪猪准备礼物&lt;/li&gt;
+&lt;li&gt;[ ] 打扫家中卫生&lt;/li&gt;
+&lt;li&gt;[ ] 修台式电脑&lt;/li&gt;
+&lt;li&gt;[ ] 修热水器&lt;/li&gt;
+&lt;li&gt;[ ] 给奶奶新年礼物&lt;/li&gt;
+&lt;li&gt;[x] 建成博客&lt;/l
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="待办" scheme="http://yoursite.com/tags/%E5%BE%85%E5%8A%9E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>小程序向左，Chatbot 向右</title>
     <link href="http://yoursite.com/2017/01/20/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%90%91%E5%B7%A6%EF%BC%8CChatbot-%E5%90%91%E5%8F%B3/"/>
     <id>http://yoursite.com/2017/01/20/小程序向左，Chatbot-向右/</id>
     <published>2017-01-20T06:44:51.000Z</published>
-    <updated>2017-01-20T06:50:10.929Z</updated>
+    <updated>2017-01-20T06:57:10.523Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>摘 要：</strong>着眼于于主流 IM 软件中的聊天机器人（Chatbot）、微信小程序和系统级的语音助手，介绍 Telegram、Skype、Messenger、Kik、Slack 中的 Chatbot ，微信小程序和智能个人助理 Contana、Siri、Google Assistant ，通过不同角度的对比分析，窥见App演变的方向。<strong>目 的：</strong>总结2016年阅读各种书籍和文章，把玩各种 App 和不同操作系统，综合产生的一些想法。</p>
+    <content type="html"><![CDATA[<p><strong>摘 要：</strong>着眼于于主流 IM 软件中的聊天机器人（Chatbot）、微信小程序和系统级的语音助手，介绍 Telegram、Skype、Messenger、Kik、Slack 中的 Chatbot ，微信小程序和智能个人助理 Contana、Siri、Google Assistant ，通过不同角度的对比分析，窥见App演变的方向。<strong>目 的：</strong>总结2016年阅读各种书籍和文章，把玩各种 App 和不同操作系统，综合产生的一些想法。<a id="more"></a> </p>
 <p><strong>关键词：</strong> Chatbot ; 微信小程序;智能个人助理</p>
 <p> 「本文参与 少数派2016年度征文」</p>
 <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="概念界定"><a href="#概念界定" class="headerlink" title="概念界定"></a>概念界定</h3><p>微信小程序是一种不需要下载安装即可使用的应用，它实现了应用「触手可及」的梦想，用户扫一扫或搜一下即可打开应用。也体现了「用完即走」的理念，用户不用关心是否安装太多应用的问题。应用将无处不在，随时可用，但又无需安装卸载。[1]</p>
@@ -220,7 +259,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;摘 要：&lt;/strong&gt;着眼于于主流 IM 软件中的聊天机器人（Chatbot）、微信小程序和系统级的语音助手，介绍 Telegram、Skype、Messenger、Kik、Slack 中的 Chatbot ，微信小程序和智能个人助理 Contana、S
+      &lt;p&gt;&lt;strong&gt;摘 要：&lt;/strong&gt;着眼于于主流 IM 软件中的聊天机器人（Chatbot）、微信小程序和系统级的语音助手，介绍 Telegram、Skype、Messenger、Kik、Slack 中的 Chatbot ，微信小程序和智能个人助理 Contana、Siri、Google Assistant ，通过不同角度的对比分析，窥见App演变的方向。&lt;strong&gt;目 的：&lt;/strong&gt;总结2016年阅读各种书籍和文章，把玩各种 App 和不同操作系统，综合产生的一些想法。
     
     </summary>
     

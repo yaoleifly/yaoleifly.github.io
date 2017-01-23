@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-20T08:41:04.603Z</updated>
+  <updated>2017-01-23T09:01:31.444Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,99 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用Leangoo完成自己的春节愿望</title>
+    <link href="http://yoursite.com/2017/01/23/%E4%BD%BF%E7%94%A8Leangoo%E5%AE%8C%E6%88%90%E8%87%AA%E5%B7%B1%E7%9A%84%E6%98%A5%E8%8A%82%E6%84%BF%E6%9C%9B/"/>
+    <id>http://yoursite.com/2017/01/23/使用Leangoo完成自己的春节愿望/</id>
+    <published>2017-01-23T08:59:11.000Z</published>
+    <updated>2017-01-23T09:01:31.444Z</updated>
+    
+    <content type="html"><![CDATA[<p>踩不住公历2016年的尾巴，总要给个机会完成农历春节的愿望清单吧~</p>
+<blockquote>
+<p>爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。</p>
+</blockquote>
+<p>这「新桃换旧符」不会凭空出来，活这么大，也没有遇到几件无端端自己就发生的好事儿，自己总得做些事情吧~<a id="more"></a></p>
+<blockquote>
+<p>凡谋之道，周密为宝。</p>
+</blockquote>
+<pre><code>——《六韬》
+</code></pre><p>那就来做个周密的计划吧。提到计划，可以用的工具实在太多，滴答清单、微软家的奇妙清单，Google家的日历或者Keep，不一而足。但是，要是提到周密计划，这些看起来轻量的工具有时候也是不堪大用，求助于人，不如回顾过往经验。大型规划？周密细节？多人协作？那不正是项目管理的要求吗？</p>
+<p>这里就选Leangoo这款简洁、轻量、可视化的项目管理工具来做我的春节愿望清单吧~</p>
+<p>说干就干！</p>
+<h3 id="关于leangoo"><a href="#关于leangoo" class="headerlink" title="关于leangoo"></a>关于leangoo</h3><p>Leangoo是一款非常简洁的团队的协作工具，它的设计理念是围绕看板进行团队协作,设计融入了很多敏捷思想，功能上也加入了大量支持敏捷的元素，比如泳道、燃尽图、敏捷工作量估算等。（好复杂呀~好多功能我都不用的。）</p>
+<h3 id="规划清单"><a href="#规划清单" class="headerlink" title="规划清单"></a>规划清单</h3><p>登录<a href="https://www.leangoo.com/kanban/login/into" target="_blank" rel="external">Leangoo</a>注册账号，绑定微信可以直接手机查看。</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/362985.png" alt="登录注册.png"></p>
+<p>进入之后就是这个界面了，我已经把里面官方提供的示例都归档了，免得影响我使用。</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/362986.png" alt="首页.png"></p>
+<p>看到我的看板<strong>2017春节愿望清单</strong>没有？</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/362987.png" alt="6件事.png"></p>
+<p>春节要做的四件需要规划的事情如下：</p>
+<ul>
+<li>承接2个微信小程序外包业务</li>
+<li>为女友准备新年礼物</li>
+<li>维修热水器</li>
+<li>维修台式机</li>
+</ul>
+<p>一件一件来规划吧~</p>
+<h4 id="微信小程序外包"><a href="#微信小程序外包" class="headerlink" title="微信小程序外包"></a>微信小程序外包</h4><p>我的家乡某city隶属于湖北省，由孝感市代管，位于鄂中腹地，是楚文化发祥地，是历史上郧子国、德安府所在地。截止2012年，土地面积1355平方公里，人口63万，辖9镇4乡2个办事处1个经济技术开发区。某city存有许多经营良好的商铺，其中烧烤外卖、美容美发预约、酒店订座、婚纱摄影预定、KTV等等可能存在着小程序设计的需求，有待发掘。</p>
+<p>为此提出建立某city微信小程序外包团队，为有需求的店铺提供一体化的小程序构建服务，优化商家服务质量和拓宽服务途径。</p>
+<p>先使用Visio画出业务流程</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/362991.jpg" alt="业务流程.jpg">接下来将具体事务和负责人员录入Leangoo</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/362996.png" alt="微信小程序2.png"></p>
+<p> 从进行阶段上设计成<strong>目标</strong>、<strong>待办事项</strong>、<strong>进行中</strong>、<strong>已完成</strong>四个列表，记录处于不同阶段的任务，设置时间节点和任务分工，所用变动都会在微信和邮件中提醒，我和小伙伴们就可以实时查看了，目前正计划和巴犀烧烤洽谈微信小程序业务，静观其变。</p>
+<h4 id="为女友准备新年礼物"><a href="#为女友准备新年礼物" class="headerlink" title="为女友准备新年礼物"></a>为女友准备新年礼物</h4><p>女友是爱美之人，妹子一般都喜欢化妆品，不过这样子就没有什么惊喜了~</p>
+<p>我还处于选择之中，于是将自己目前的计划列了出来。</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363002.png" alt="准备礼物.png">寻找礼物步骤之中又分为</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363005.png" alt="寻找推荐.png"></p>
+<p>目前看中的礼物是这一款：</p>
+<p><a href="https://weidian.com/item.html?itemID=1985233649" target="_blank" rel="external">历历在木</a> 2017日历台历插画木托</p>
+<p><img src="https://si.geilicdn.com/vshop1068257974-1480419291344-7588888.jpg?w=750&amp;h=750&amp;cp=1" alt="Image"></p>
+<p>感觉一份蛮有创意的礼物~</p>
+<h4 id="维修热水器"><a href="#维修热水器" class="headerlink" title="维修热水器"></a>维修热水器</h4><p>家里平时没有人居住，热水器一直处于不能使用的状态，春节会在老家居住一个月左右，大冬天这么冷，热水器必须修好。</p>
+<p>我的安排如下:</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363007.png" alt="维修热水器.png">其中子步骤又可以分为:</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363008.png" alt="找到热水器说明书.png"></p>
+<p>很多内容都是一种推演式的打算，为实际执行时提供思路。</p>
+<p>如果自己动手维修的话，就需要仔细查看说明书了（现在这里立个flag）：</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363009.png" alt="热水器.png">不过，我已经做好买个新的热水器的打算了~</p>
+<h4 id="维修台式机"><a href="#维修台式机" class="headerlink" title="维修台式机"></a>维修台式机</h4><p>说到这台式机，那就有历史了。购于2012年，当时预装的xp的系统，去年春节在家的时候一时兴起打算刷个Win10系统，结果Win10系统一直刷不进去，也无法退回xp，实在是悲剧，由于不在家，这事儿就拖了一年，决定今年春节试试PE安装系统，看能不能救活她。</p>
+<p>我的安排如下：</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363011.png" alt="维修台式机.png"></p>
+<p>显然，这其中最重要就是如何使用PE了，这之前可是要做好功课的，我选择的<a href="http://www.wepe.com.cn/download.html" target="_blank" rel="external">微PE工具箱</a></p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363013.png" alt="微PE.png">感觉这个还是不错，之前也有用过。</p>
+<p>使用<a href="https://rufus.akeo.ie/downloads/" target="_blank" rel="external">rufus-2.11p</a>做好PE启动U盘，待回家使用。</p>
+<p>怎么使用PE我也是准备两个还不错的教程：</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363015.png" alt="如何使用PE.png"></p>
+<p>God bless me，希望春节我的台式机可以复活吧~，带来一些新气象。</p>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>我的<strong>2017春节愿望清单</strong>在Leangoo中完整展示如下：</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363016.png" alt="春节心愿完整.png">接下来按照计划来一步一步推进就可以了。</p>
+<p>目前已经完成了16%！</p>
+<p><img src="http://matrix.sspai.com/attachment/origin/2017/01/10/363017.png" alt="完成情况.png"></p>
+<p>当然了，工具不过是你做事风格的外化，它帮助你，却不能决定你。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;踩不住公历2016年的尾巴，总要给个机会完成农历春节的愿望清单吧~&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;爆竹声中一岁除，春风送暖入屠苏。千门万户曈曈日，总把新桃换旧符。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这「新桃换旧符」不会凭空出来，活这么大，也没有遇到几件无端端自己就发生的好事儿，自己总得做些事情吧~
+    
+    </summary>
+    
+      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="少数派" scheme="http://yoursite.com/tags/%E5%B0%91%E6%95%B0%E6%B4%BE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>过一种沉浸的人生</title>
-    <link href="http://yoursite.com/2017/01/29/%E8%BF%87%E4%B8%80%E7%A7%8D%E6%B2%89%E6%B5%B8%E7%9A%84%E4%BA%BA%E7%94%9F/"/>
-    <id>http://yoursite.com/2017/01/29/过一种沉浸的人生/</id>
-    <published>2017-01-29T05:14:00.000Z</published>
-    <updated>2017-01-20T08:41:04.603Z</updated>
+    <link href="http://yoursite.com/2017/01/22/%E8%BF%87%E4%B8%80%E7%A7%8D%E6%B2%89%E6%B5%B8%E7%9A%84%E4%BA%BA%E7%94%9F/"/>
+    <id>http://yoursite.com/2017/01/22/过一种沉浸的人生/</id>
+    <published>2017-01-22T05:14:00.000Z</published>
+    <updated>2017-01-23T09:01:12.326Z</updated>
     
     <content type="html"><![CDATA[<p> 「本文参与 少数派2016年度征文」</p>
 <p>我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 <a href="https://en.wikipedia.org/wiki/Jacqueline_Novogratz" target="_blank" rel="external">Jacqueline Novogratz</a> 的TED演讲 <a href="https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion" target="_blank" rel="external">Inspiring a life of immersion</a> 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。</p>
@@ -109,7 +197,7 @@
     <link href="http://yoursite.com/2017/01/20/%E4%B8%80%E7%A7%8D%E3%80%8C%E5%AE%9A%E5%88%B6%E5%8C%96%E3%80%8D%E7%9A%84%E4%BF%A1%E6%81%AF%E7%94%9F%E6%B4%BB%E6%96%B9%E5%BC%8F/"/>
     <id>http://yoursite.com/2017/01/20/一种「定制化」的信息生活方式/</id>
     <published>2017-01-20T07:38:23.000Z</published>
-    <updated>2017-01-20T08:22:40.291Z</updated>
+    <updated>2017-01-20T08:42:16.743Z</updated>
     
     <content type="html"><![CDATA[<p>「本文参与 少数派2016年度征文」</p>
 <p>摘要：本文主要介绍我在这个信息爆炸时代「定制化」生活的方法和些许思考，获取真实的信息，建立合适的流程，深化对知识的理解，输出不那么浅薄的思考。「定制化」就是对生活做减法，拒绝无用信息的轰炸，拒绝低效的工作流程，拒绝独立思考空间的沦陷。<a id="more"></a></p>
@@ -1041,49 +1129,6 @@
     <summary type="html">
     
       &lt;p&gt;这个时间点，我将要踏上回家的路。&lt;br&gt;外面是台风间歇性的发作，各种奇怪的风和新奇的雨开始交织，现在是风雨的天下。
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>与社会互博</title>
-    <link href="http://yoursite.com/2015/07/10/%E4%B8%8E%E7%A4%BE%E4%BC%9A%E4%BA%92%E6%90%8F/"/>
-    <id>http://yoursite.com/2015/07/10/与社会互搏/</id>
-    <published>2015-07-10T10:41:48.000Z</published>
-    <updated>2015-09-12T22:07:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>我总觉得在少年人与社会的互搏中应该有一个基本法则：</p>
-<blockquote>
-<p>那就是这些少年人应该明白，他们并没有自己想象中的那么重要。<a id="more"></a></p>
-</blockquote>
-<p>年轻一代的绝大部分人从小被诸如「早晨九点钟的太阳」、「祖国明天的花朵」这种说辞潜移默化影响，再加上计划生育的施行，一个家庭只有一个孩子，在亲人众星捧月式的悉心照料下，他们养成了一种思维惯性：我很重要。</p>
-<p>天涯和知乎的情感生活版块是这种思维的重灾区，我们经常能看到这样的问题：</p>
-<p>为什么有男生追我很久之后就不追了？<br>为什么我作为一个本科获65个证书的证霸却找不到工作？<br>为什么我毕业于211、985，一个三本的同学却能够挣得比我多？</p>
-<p>还有曾经知乎很有名的某个女题主，为了不让还在爱她的前男友跟其他女孩生孩子 而上网提问有什么药物会导致永久阳痿，典型的自我意识膨胀到了极点的病态。</p>
-<p>带着这种思维进入成人世界，注定会在与社会黑暗面的斗争中饱受老拳却又毫无还手之力。为什么？因为他们一般只拥有了这种思维中最狭隘的那个切面：<strong>自负、天真、轻浮、毫无节制、浑身槽点、自以为是、自怨自艾而又缺乏自嘲精神。</strong>这些几乎是失败者的通病，所以他们屡战斗屡败也就不足为奇了。而这种思维中光亮的那个切面：<strong>热忱、上进、知难而进、永不言弃、芥子须弥、初衷不改 </strong>反而成了一种隐形技能，只有在一种bug free的状态下才能被激发，也即为：只有社会对我越好，我才越上进，只要社会对我不好，我就会持续埋怨——这听起来就是一个vicious cycle，恶性循环。</p>
-<p>国家是一辆行驶在历史轨道上的大坦克，驾驶者是统治阶级，他让坦克往左走，坦克就向左，他让坦克往右走，坦克就往右，不可能因为你螳臂挡车，这辆坦克就会改变它的既定轨道。你所能做的，就是融入这台机器内部，从一颗螺丝钉开始，逐渐成长为瓦解黑暗堡垒的有生力量。</p>
-<p>所以我一直认为，面对黑暗面时，最好的状态就是：</p>
-<blockquote>
-<p>自己坚信自己是重要的，同时也承认自己是不重要的。这种承认并非是一种消极的应对，而是在面对社会灰色褶皱时，说服自己卧薪尝胆，默默积蓄力量的一种智慧。</p>
-</blockquote>
-<p>作为跟你有同样困惑的人，我总是这么告诉自己：</p>
-<blockquote>
-<p>天会亮的，但绝不取决于我是否开了灯。但我开了灯，总归能让我周围的那块地更亮堂一些。</p>
-</blockquote>
-<p>源自知乎</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我总觉得在少年人与社会的互搏中应该有一个基本法则：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;那就是这些少年人应该明白，他们并没有自己想象中的那么重要。
     
     </summary>
     

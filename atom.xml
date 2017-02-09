@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-08T06:00:46.762Z</updated>
+  <updated>2017-02-09T06:08:28.332Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python学习笔记</title>
+    <link href="http://yoursite.com/2017/02/08/Python%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2017/02/08/Python学习笔记/</id>
+    <published>2017-02-08T08:18:22.000Z</published>
+    <updated>2017-02-09T06:08:28.332Z</updated>
+    
+    <content type="html"><![CDATA[<p>制定计划，2017年2月至5月入门 Python 语言，每天输出不少于200字的学习笔记。<a id="more"></a></p>
+<p>Python 是什么类型的语言？</p>
+<p>Python（英国发音：/ˈpaɪθən/ 美国发音：/ˈpaɪθɑːn/），是一种<strong>面向对象、解释型的计算机程序语言</strong>。它包含了一组功能完备的标准库，能够轻松完成很多常见的任务。它的语法简单，与其它大多数程序设计语言使用大括号不一样，它使用缩进来定义语句块。</p>
+<p>IDLE 是什么？</p>
+<p>IDLE 是开发 Python 程序的基本 IDE（集成开发环境），具备基本的 IDE 的功能，是非商业 Python 开发的不错的选择。 … 同时，使用 Eclipse 这个强大的框架时 IDLE 也可以非常方便的调试 Python 程序。 基本功能：语法加亮；段落缩进；基本文本编辑；TABLE 键控制；调试程序。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;制定计划，2017年2月至5月入门 Python 语言，每天输出不少于200字的学习笔记。
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>个性也是一种竞争力</title>
@@ -1116,58 +1143,6 @@
     </summary>
     
       <category term="读书" scheme="http://yoursite.com/categories/%E8%AF%BB%E4%B9%A6/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大圣归来</title>
-    <link href="http://yoursite.com/2015/07/13/%E5%A4%A7%E5%9C%A3%E5%BD%92%E6%9D%A5/"/>
-    <id>http://yoursite.com/2015/07/13/大圣归来/</id>
-    <published>2015-07-12T23:31:32.000Z</published>
-    <updated>2015-09-12T22:07:46.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>1999年，西游记动画片上映。</p>
-<p>2015年，大圣归来。</p>
-<p>大圣，16年了，你可知道都过了16年了。<a id="more"></a></p>
-<p>这16年里，我认识日本一个叫鸣人的笨蛋下忍，去年他也当上了村子的火影了。我还认识了一个叫路飞的朋友，还有一个叫柯南的永远长不大的小孩，一个叫坂田银时的混蛋。在美国，还有一个大铁疙瘩叫钢铁侠，有一个拿盾牌的特帅的美国队长，还有蝙蝠侠老爷。</p>
-<p>可是大圣，这16年里你都干嘛去了？</p>
-<p>我猜你回花果山了，吃着大桃子，整天逍遥自在，无拘无束，漫山遍野的猴子猴孙。什么斗战胜佛，那不适合你，我可没忘，你可是齐天大圣！<br>大圣，你可知道当江流儿说：</p>
-<blockquote>
-<p>“齐天大圣孙悟空，身如玄铁，火眼金睛，长生不老还有七十二变！”</p>
-</blockquote>
-<p>的时候，我一下没忍住就哭了出来。大圣，虽然你法印还在，不能腾云驾雾，不能七十二变，也没有那根金箍棒，拔一根毫毛也变不出漫山遍野的美猴王，但我可没忘，这个调皮捣蛋听人唠叨会一脸不耐烦，遇到危险挺身而出身手不凡的猴子，他可是齐天大圣！</p>
-<p>大圣，你可知道你离开了这么多年，我看过多少个翻版的你？所有你的电影，我都买了票跑到了电影院去看，可他们都演不出你。我知道，你就悄悄告诉过六小龄童老师演你的秘诀，可是你知道吗，六小龄童老师也已经56岁了啊，但他还是一遍遍耐心的告诉那些年轻演员孙大圣是什么样，他还来过我们学校，模仿你耍了一次金箍棒。大圣，我们都不像你一样，能长生不老。</p>
-<p>所以大圣，当我在电影院看到你回来的时候，我一个二十多岁的人，还是哭的像个小孩子一样。虽然你被佛祖的法印束缚没了法力，虽然你脸长手长似乎不是那个美猴王。</p>
-<p>但我还是认出来了，那就是你，大圣，你回来了。</p>
-<p>你给江流儿说：“有一天你变得勇敢，坚强。”你可记得你当年也对我们这一群孩子说过？</p>
-<p>你看着江流儿对傻丫头说：“有了齐天大圣保护你，就什么也不怕啦。”你可记得我们曾经买过的那些塑料的美猴王面具，塑料的金箍棒，模仿你耍金箍棒，爬上爬下？</p>
-<p>当你给八戒说：<strong>“老猪，跟我走！</strong>”的时候，你可知道我多兴奋！这不就是我小时候的大圣吗！</p>
-<p>当你在烟雾里现身，背景音乐想起了星爷当年大话西游的背景音乐的时候，我就知道，马上你就要拔出金箍棒，大展神通了。说到大话西游，不知道你看过没有，也是关于你的故事，挺感人的一个改编故事，不过那个在戏里演你的星爷，他也老了。</p>
-<p>大圣，多好你能长生不老，我希望我的孩子以后，也能有一个童年时代的好伙伴，也一个调皮的英雄叫孙悟空，叫美猴王，叫齐天大圣。<br>大圣，在电影院的时候，我见到老爷爷带着孙子看的，见到妈妈带着孩子，每个人脸上的期待和欢喜都是一样的。</p>
-<p>大圣，16年后你回来了。我觉得这16年里，虽然被国产动画坑了一次又一次，但这次回来了，我觉得起码这一次，值。</p>
-<p>大圣，当你在剧里突破法印一身金甲，身后红披风霸气的摇摆的时候，我身边的小孩子突然给他妈妈说：</p>
-<blockquote>
-<p>妈妈，你看，他变身了。</p>
-</blockquote>
-<p>当时我多想给他说：</p>
-<blockquote>
-<p>他没有变身，这就是他，齐天大圣回来了。</p>
-</blockquote>
-<p>转自<a href="http://www.zhihu.com/question/28066166" target="_blank" rel="external">知乎</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;1999年，西游记动画片上映。&lt;/p&gt;
-&lt;p&gt;2015年，大圣归来。&lt;/p&gt;
-&lt;p&gt;大圣，16年了，你可知道都过了16年了。
-    
-    </summary>
-    
-      <category term="电影" scheme="http://yoursite.com/categories/%E7%94%B5%E5%BD%B1/"/>
     
     
       <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>

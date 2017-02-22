@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-02-17T02:49:48.903Z</updated>
+  <updated>2017-02-22T05:47:31.283Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,197 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gitbook浅玩：如何发布开源的需求文档？</title>
+    <link href="http://yoursite.com/2017/02/22/Gitbook%E6%B5%85%E7%8E%A9%EF%BC%9A%E5%A6%82%E4%BD%95%E5%8F%91%E5%B8%83%E5%BC%80%E6%BA%90%E7%9A%84%E9%9C%80%E6%B1%82%E6%96%87%E6%A1%A3%EF%BC%9F/"/>
+    <id>http://yoursite.com/2017/02/22/Gitbook浅玩：如何发布开源的需求文档？/</id>
+    <published>2017-02-22T05:45:38.000Z</published>
+    <updated>2017-02-22T05:47:31.283Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>本文主要围绕 GitBook 的安装、使用、集成、书籍发布四个方面来论述。<a id="more"></a></p>
+</blockquote>
+<p><img src="http://image.woshipm.com/wp-files/2017/02/rpF6qiSOd2uFAo0xmEQF.jpg" alt="img"></p>
+<p>GitBook 是一项致力于文档编制、数码写作和出版的新型、简单的解决方案。它不仅提供了简单且强大的电子书创建工具 GitBook，同时还提供了在线电子书制作平台 GitBook.com。</p>
+<blockquote>
+<p>GitBook is where you create, write and organize documentation and books with your team.</p>
+</blockquote>
+<p>简单点说，如果你想自己写开源的需求文档玩也打算让其他人加入一起参与创作，就可以尝试选择 Gitbook 了。</p>
+<p>为什么要将需求文档开源呢？日常工作中，复杂程度很高的业务需求（如医疗行业）单个人或者单个组织的知识范围和深度难以分析透彻，众人拾柴火焰高，将需求文档转变为<strong>众创</strong>的形式，就极有可能在一段时间的演化后输出品质极高的需求文档，<strong>人人编写，人人使用</strong>，这也是互联网开放开源精神的体现！</p>
+<p>很多东西就是玩出来的，如果你不满不同行业的知识壁垒和乐于分享你的知识，同时，你也打算自己改变这种现状，这篇文章就值得一看。（预计花费8分钟阅读完，消化并熟练掌握需2小时）</p>
+<p>本文主要围绕 GitBook 的安装，使用，集成，书籍发布四个方面来论述，还会分享一些Gitbook 书籍资源，文末还会发起<strong>开源的</strong>编写不同行业的需求文档的活动。</p>
+<p>Let’s play~</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><img src="http://image.woshipm.com/wp-files/2017/02/pwTZ5giVan4fFbB1nFg0.png" alt="img"></p>
+<p>首先，你需要安装 <a href="https://zh.wikipedia.org/zh-cn/Node.js" target="_blank" rel="external">node.js</a> ，以便使用“命令提示符” （Mac 系统打开“终端”）来安装 Gitbook 。</p>
+<p>安装只需要一步就能实现，简单移动。</p>
+<blockquote>
+<p>$ npm install gitbook -g</p>
+</blockquote>
+<p>由于网络的原因，安装的时间可能会较长一些，请耐心等待直到安装完成。</p>
+<p><img src="http://image.woshipm.com/wp-files/2017/02/RZJ2Nyfijin7E6VzQhqp.png" alt="img"></p>
+<p>安装完成后可以输入以下命令，以查看 GitBook 版本的方式检查是否安装成功：</p>
+<blockquote>
+<p>$ gitbook -V</p>
+</blockquote>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>基本的用法并不复杂，一般来说需要两步：</p>
+<ol>
+<li>使用 gitbook init 初始化书籍目录</li>
+<li>使用 gitbook serve 编译书籍</li>
+</ol>
+<p>下面使用一个简单直观的示例来介绍 Gitbook 的基本使用方法。</p>
+<h3 id="gitbook-init"><a href="#gitbook-init" class="headerlink" title="gitbook init"></a><strong>gitbook init</strong></h3><p>首先，创建如下目录结构：</p>
+<blockquote>
+<p>$ tree book/<br>book/<br>├── README.md<br>└── SUMMARY.md</p>
+<p>0 directories, 2 files</p>
+</blockquote>
+<p>README.md 和 SUMMARY.md 是两个必须文件，README.md 是对书籍的简单介绍：</p>
+<blockquote>
+<p>$ dog book/README.md<br># README</p>
+<p>This is a book powered by <a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="external">GitBook</a>.</p>
+</blockquote>
+<p>SUMMARY.md 是书籍的目录结构。内容如下：</p>
+<blockquote>
+<p>$ dog book/SUMMARY.md<br># SUMMARY</p>
+<p>* <a href="chapter1/README.md">Chapter1</a><br>* <a href="chapter1/section1.1.md">Section1.1</a><br>* <a href="chapter1/section1.2.md">Section1.2</a><br>* <a href="chapter2/README.md">Chapter2</a></p>
+</blockquote>
+<p>创建了这两个文件后，使用 gitbook init，它会为我们创建 SUMMARY.md 中的目录结构。</p>
+<blockquote>
+<p>$ cd book<br>$ gitbook init<br>$ tree<br>.<br>├── README.md<br>├── SUMMARY.md<br>├── chapter1<br>│ ├── README.md<br>│ ├── section1.1.md<br>│ └── section1.2.md<br>└── chapter2<br>└── README.md</p>
+<p>2 directories, 6 files</p>
+</blockquote>
+<h3 id="gitbook-serve"><a href="#gitbook-serve" class="headerlink" title="gitbook serve"></a><strong>gitbook serve</strong></h3><p>书籍目录结构创建完成以后，就可以使用 gitbook serve 来编译和预览书籍了：</p>
+<blockquote>
+<p>$ gitbook serve<br>Live reload server started on port: 35729<br>Press CTRL+C to quit …</p>
+<p>info: 7 plugins are installed<br>info: loading plugin “livereload”… OK<br>info: loading plugin “highlight”… OK<br>info: loading plugin “search”… OK<br>info: loading plugin “lunr”… OK<br>info: loading plugin “sharing”… OK<br>info: loading plugin “fontsettings”… OK<br>info: loading plugin “theme-default”… OK<br>info: found 5 pages<br>info: found 7 asset files<br>info: &gt;&gt; generation finished with success in 1.8s !</p>
+<p>Starting server …<br>Serving book on <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+</blockquote>
+<p>gitbook serve 命令实际上会首先调用 gitbook build 编译书籍，完成以后会打开一个 web 服务器，监听在本地的 4000 端口。</p>
+<p>现在，可以用浏览器打开 <a href="http://127.0.0.1:4000/" target="_blank" rel="external">http://127.0.0.1:4000</a> 查看书籍的效果，如下图：</p>
+<p><img src="http://image.woshipm.com/wp-files/2017/02/THHiRfbJmTSZ5iwANgYS.png" alt="img"></p>
+<p>现在，gitbook 为我们创建了书籍目录结构后，就可以向其中添加真正的内容了，文件的编写使用 markdown 语法，在文件修改过程中，每一次保存文件，gitbook serve 都会自动重新编译，所以可以持续通过浏览器来查看最新的书籍效果！</p>
+<p>此外，你还可以下载 <a href="https://www.gitbook.com/editor" target="_blank" rel="external">Gitbook 编辑器</a>，实现所见所得编辑体验。</p>
+<h2 id="图书输出"><a href="#图书输出" class="headerlink" title="图书输出"></a>图书输出</h2><p>目前为止，Gitbook支持如下输出：</p>
+<ul>
+<li>静态HTML，可以看作一个静态网站</li>
+<li>PDF格式</li>
+<li>eBook格式（Mobi&amp;ePub）</li>
+<li>单个HTML文件</li>
+<li>JSON格式</li>
+</ul>
+<h3 id="输出PDF"><a href="#输出PDF" class="headerlink" title="输出PDF"></a><strong>输出PDF</strong></h3><p>输出为PDF文件，需要先安装gitbook pdf。</p>
+<blockquote>
+<p>$ npm install gitbook-pdf -g</p>
+</blockquote>
+<p>如果在安装gitbook-pdf时，觉得下载phantomjs包太慢的话，你可以到phantomjs的官方网站上去下载。<a href="http://phantomjs.org/" target="_blank" rel="external">http://phantomjs.org/</a></p>
+<p>这个包的安装方式，参考其官网的说明文档。</p>
+<p>然后，用下面的命令就可以生成PDF文件了。</p>
+<blockquote>
+<p>$ gitbook pdf {book_name}</p>
+</blockquote>
+<p>如果，你已经在编写的gitbook当前目录，也可以使用相对路径。</p>
+<blockquote>
+<p>$ gitbook pdf .</p>
+</blockquote>
+<p>然后，你就会发现，你的目录中多了一个名为book.pdf的文件。</p>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><p>可以使用Github Pages服务将我们写的gitbook发布到互联网上，前提是你已经了解了Git、Github及Github Pages的使用。</p>
+<h3 id="创建仓库与分支"><a href="#创建仓库与分支" class="headerlink" title="创建仓库与分支"></a><strong>创建仓库与分支</strong></h3><ol>
+<li>登陆到Github，创建一个新的仓库，名称我们就命名为book，这样我就得到一个book仓库。</li>
+<li>克隆仓库到本地： git clone git@github.com:/USER_NAME/book.git</li>
+<li>创建一个新分支： git checkout -b gh-pages，注意，分支名必须为gh-pages。</li>
+<li>将分支push到仓库： git push -u origin gh-pages。</li>
+<li>切换到主分支：git checkout master。</li>
+</ol>
+<p>经过这一步处理，我们已经创建了gh-pages分支了，有了这个分支，Github会自动为你分配一个网址。</p>
+<h2 id="Gitbook资源"><a href="#Gitbook资源" class="headerlink" title="Gitbook资源"></a>Gitbook资源</h2><p><a href="https://www.gitbook.com/book/xiaolai/reborn/details" target="_blank" rel="external">李笑来《重生》</a></p>
+<p><img src="http://image.woshipm.com/wp-files/2017/02/MPjle7KBJgKF18esUV6r.png" alt="img"></p>
+<p>只推荐这本书吧，七年一重生，开拓新的人生维度~</p>
+<p>这就是一本开源的书籍，同样的，需求文档也是可以是开放式的。</p>
+<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><p>直接将排版好导出的文档可以放入 Kindle 或 iBooks 中，阅读体验可以得到不小提升~</p>
+<p>欢迎加入到编辑开源需求文档的队伍中~</p>
+<p>本文由 @姚磊 原创发布于人人都是产品经理。未经许可，禁止转载。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文主要围绕 GitBook 的安装、使用、集成、书籍发布四个方面来论述。
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+      <category term="产品" scheme="http://yoursite.com/tags/%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>产品SKU</title>
+    <link href="http://yoursite.com/2017/02/22/%E4%BA%A7%E5%93%81SKU/"/>
+    <id>http://yoursite.com/2017/02/22/产品SKU/</id>
+    <published>2017-02-22T05:37:58.000Z</published>
+    <updated>2017-02-22T05:47:46.052Z</updated>
+    
+    <content type="html"><![CDATA[<p>在电子商务里，一般会提到这样几个词：商品、单品、SPU、SKU </p>
+<p>简单理解一下，<strong>SPU是标准化产品单元</strong>，区分品种；<strong>SKU是库存量单位</strong>，区分单品；商品特指与商家有关的商品，可对应多个SKU。 <a id="more"></a></p>
+<h2 id="表述一"><a href="#表述一" class="headerlink" title="表述一"></a>表述一</h2><p>首先，搞清楚商品与单品的区别。例如，iphone是一个单品，但是在淘宝上当很多商家同时出售这个产品的时候，iphone就是一个商品了。</p>
+<p>商品：淘宝叫item，京东叫product，商品特指与商家有关的商品，每个商品有一个商家编码，每个商品下面有多个颜色，款式，可以有多个SKU。 </p>
+<p>SPU = Standard Product Unit （标准化产品单元），SPU是商品信息聚合的最小单位，是一组可复用、易检索的标准化信息的集合，该集合描述了一个产品的特性。通俗点讲，属性值、特性相同的商品就可以称为一个SPU。例如，iphone4就是一个SPU，N97也是一个SPU，这个与商家无关，与颜色、款式、套餐也无关。 </p>
+<p>SKU=stock keeping unit(库存量单位)，SKU即库存进出计量的单位， 可以是以件、盒、托盘等为单位。在服装、鞋类商品中使用最多最普遍。 例如纺织品中一个SKU通常表示：规格、颜色、款式。</p>
+<p>SKU是物理上不可分割的最小存货单元。在使用时要根据不同业态，不同管 理模式来处理。比如一香烟是50条，一条里有十盒，一盒中有20支，这些单位就要根据不同的需要来设定SKU。 </p>
+<h2 id="表述二"><a href="#表述二" class="headerlink" title="表述二"></a>表述二</h2><p>spu 和 sku 都是属性值的集合, 举个栗子 &gt;&gt;</p>
+<p>一部 6S, 它身上有很多的属性和值. 比如 :</p>
+<ul>
+<li><p>毛重: 420.00 g</p>
+</li>
+<li><p>产地: 中国大陆</p>
+</li>
+<li>容量: 16G, 64G, 128G</li>
+<li>颜色: 银, 白, 玫瑰金</li>
+</ul>
+<p>你跑进苏宁, 说想要一台 6S, 店员也会再继续问: 你想要什么 6S? 16G 银色? 64G 白色?</p>
+<p>每一台 6S 的毛重都是 420.00 g, 产地也都是 中国大陆. 这两个属性就属于 spu 属性.<br>而容量和颜色, 这种会影响价格和库存的(比如 16G 与 64G 的价格不同, 16G 银色还有货, 金色卖完了)属性就是 sku 属性.</p>
+<p>spu 属性(不会影响到库存和价格的属性, 又叫关键属性) &gt;&gt;</p>
+<ul>
+<li><p>毛重: 420.00 g</p>
+</li>
+<li><p>产地: 中国大陆</p>
+</li>
+</ul>
+<p>sku 属性(会影响到库存和价格的属性, 又叫销售属性) &gt;&gt;</p>
+<ul>
+<li><p>容量: 16G, 64G, 128G</p>
+</li>
+<li><p>颜色: 银, 白, 玫瑰金</p>
+</li>
+</ul>
+<p>sku 在生成时, 会根据 属性生成 相应的 笛卡尔积.<br>想像一下扑克牌的黑红梅方和 A-K, 扑克牌是这样的 sku 属性:</p>
+<ul>
+<li><p>牌面: A - K</p>
+</li>
+<li><p>花色: 黑红梅方</p>
+</li>
+</ul>
+<p>最终会生成 13 <em> 4 = 52 张牌, 上面的 6S 则会生成 3 </em> 3 = 9 个 SKU</p>
+<p>商品 : iphone 6s<br>spu : 包含在每一部 6s 的属性集合, 与商品是一对一的关系(产地:中国, 毛重:420g…)<br>sku : 影响价格和库存的 属性集合, 与商品是多对一的关系<br>单品 : 同 sku. 国人的另一种叫法!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在电子商务里，一般会提到这样几个词：商品、单品、SPU、SKU &lt;/p&gt;
+&lt;p&gt;简单理解一下，&lt;strong&gt;SPU是标准化产品单元&lt;/strong&gt;，区分品种；&lt;strong&gt;SKU是库存量单位&lt;/strong&gt;，区分单品；商品特指与商家有关的商品，可对应多个SKU。
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>节省与否</title>
@@ -262,7 +453,7 @@
     <link href="http://yoursite.com/2017/01/22/%E8%BF%87%E4%B8%80%E7%A7%8D%E6%B2%89%E6%B5%B8%E7%9A%84%E4%BA%BA%E7%94%9F/"/>
     <id>http://yoursite.com/2017/01/22/过一种沉浸的人生/</id>
     <published>2017-01-22T05:14:00.000Z</published>
-    <updated>2017-01-23T09:01:12.326Z</updated>
+    <updated>2017-02-22T05:19:38.082Z</updated>
     
     <content type="html"><![CDATA[<p> 「本文参与 少数派2016年度征文」</p>
 <p>我们都希望过一种有意义的人生，但是从何开始呢？2013年我从 <a href="https://en.wikipedia.org/wiki/Jacqueline_Novogratz" target="_blank" rel="external">Jacqueline Novogratz</a> 的TED演讲 <a href="https://www.ted.com/talks/jacqueline_novogratz_inspiring_a_life_of_immersion" target="_blank" rel="external">Inspiring a life of immersion</a> 那里得知：沉浸在某种正义、某个社区或某种热情中而奋斗的人正是塑造历史之人。</p>
@@ -1049,109 +1240,6 @@
     
     
       <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>读冷术</title>
-    <link href="http://yoursite.com/2015/07/23/%E5%86%B7%E8%AF%BB%E6%9C%AF/"/>
-    <id>http://yoursite.com/2015/07/23/冷读术/</id>
-    <published>2015-07-23T11:00:00.000Z</published>
-    <updated>2015-09-12T22:07:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="什么是冷读术？"><a href="#什么是冷读术？" class="headerlink" title="什么是冷读术？"></a>什么是冷读术？</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所谓冷读术，就是 <strong>cold reading</strong>，cold 有着没有准备的意思，reading 有着读心、占心的意思，冷读术就是在在别人没有防备的情况下，甚至第一次见面时看透他人的心思，从而使自己更好与别人交流。经常被心理医生用于辅助心理治疗。<a id="more"></a></p>
-<blockquote>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你有让人信服的能力，现在的问题是，你是用这能力控制别人还是帮助别人。</p>
-</blockquote>
-<div align="right"><br>by派翠克•简，摘自《超感警探》<br></div><br><div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/92/924483__brain-teaser_p.jpg" width="600" height="300" align="center"><br></div>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;从接触冷读术到用的相对有效，已经有3个月了，中间有很多事情，我也为它牺牲了很多很多，我重新审视这个技巧，我看见一些以前看不到的问题。我学这些东西（并非只有冷读术，还有进化心理学）其实，是我觉得，我要是能掌握这些东西，我似乎就可以摸到上帝的领域，掌握人意识的变化。但是随着学习的深入，我越来越发现，我有的只是一些技巧而已，和魔术一般。<strong>并非真的有魔力，并非真的能控制别人。</strong></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渐渐地，我才发现，冷读术这种技巧的后果，最可怕的地方，它消磨了人的人性，随着学得越深越发现，离不开它，逐渐的忘了正常的聊天是什么样子，别人认为很了解你，却不知道他们其实一点都不了解你。这就是悲哀，一种孤独感。我会不自觉地看透很多东西，比如我的朋友在撒谎，我发过誓，不对他们用，可是不自觉地看穿他们的谎言。不自觉地在解读他们。</p>
-<h2 id="记忆宫殿"><a href="#记忆宫殿" class="headerlink" title="记忆宫殿"></a>记忆宫殿</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;记忆宫殿，是存在的，我就在用，我能清晰的说出一年前的今天我在做什么，见了谁，说了什么，前提是，宫殿要不断地放入记忆并且整理。不放入的记忆是不会被记忆宫殿记录的。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在此之前我需要，解释下人脑的构造，可能有不正确的地方，至少我认为这样解释会更通俗易懂。人脑和计算机一般，有内存，有硬盘，有CPU和GPU。我们要讲的是有关记忆的内存和硬盘。人的内存是及其有限的，你不能同时多任务运行，而且在你运行过多任务后你的内存也会被大量占用，处理下个任务的耐心也会减少。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的内存很少这一点知道了之后，我们来看看我们伟大的大脑——硬盘。有时你不得不感叹造物主的神奇，不得不惊叹人是这个世界的奇迹。<strong>我们的大脑可以记住5亿本书！一个字不差的。</strong>（如果你愿意穷极一生去尝试）也就是硬盘的容量大到让人惊叹。一个人的一辈子除了药物作用的失忆，大部分记忆都被完整的保存下来了，只不过都被没有条理的扔在了黑盒子里。</p>
-<div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/91/914729__brain-cells_p.jpg" width="600" height="300" align="center"><br></div>
-
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人的大脑是分成三部分，<strong>脑核，边缘大脑，大脑皮质</strong>。记忆存在与覆盖在大脑皮质之中。记忆的获得与整个大脑的突触的抑制与促进相关。大脑一旦接受刺激神经元就开始产生突起而这些突起和大脑内部的突触相链接产生新的记忆。不断刺激使细胞间联系更加密切。树突不断增多。信息更容易通过，通过记忆不断生成，树突逐渐形成网络，并逐渐完善，人才能举一反三，触类旁通，所以，脑子越用越好使。我们知道了人脑的构成，也知道了记忆如何产生。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我要开始讲记忆宫殿是如何构成的，它是链接记忆的钥匙。你可以把它看成电脑文件夹。人脑的抽象理解，估计大家都听过<strong>艾宾浩斯记忆曲线</strong>（遗忘曲线），我想说那更像是扯淡，虽然扯得很有水准，清晰的记忆源于外界刺激，与反复的重复动作。艾宾浩斯提出的理论就是反复记忆，来提高记忆能力。其实就是废话，一个单词抄一千遍谁都能记住了。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们进入主题，记忆宫殿的构成。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎来到，人类最伟大的圣殿，那便是只属于你的记忆宫殿。<strong>记忆宫殿是基于强烈的外界刺激来构成清晰记忆</strong>这一理论诞生而来。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;好了，我们首先需要一座宫殿。而这座宫殿可以是任何地方，条件有两个，一是宽广，二是生动。你可以用你的学校，或者常去的公园。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我再重申一边你的宫殿一定是<strong>广阔且生动</strong>的地点！因为地点不生动就很难嵌入清晰的记忆。不清楚具体如何构建宫殿话，我来先举一个小例子。汉尼拔的记忆宫殿是及其奢华的虚拟房子。派翠克•简的记忆宫殿是儿时父亲常带他去的游乐园。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可以这样构建宫殿，找一个每天都能去的地方，把它的所有地点都走一边，每天回家后，闭上眼去回忆它，回忆每一个你能想到的细节，比如说，你用你的学校，你要回忆到每堵墙的触感，那里有野草，哪里经常有噪音，开门时门把手是什么做的什么颜色，什么花纹。这很重要！越具体越好！你要做的是幻想出所有细节，记住是所有细节，如果你有庭园的话，草的形态，树的样子，触感，纹理。所有的所有。沙发的感觉，什么材质什么纹理、瓷砖的样式等等。</p>
-<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你可能要花很长时间构建它。别为了一时痛快忽略细节，你日后一定会后悔的。</strong>现在你有你的只属于你的宫殿了，宫殿的构建过程可能很漫长，不要着急，一点一点做。</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;你要做的是闭上你的眼睛幻想自己身处于宫殿之中，在宫殿里走动一下，跳一跳，跑一跑，转一转，去看一看宫殿内的景象。</p>
-<p>当你自己可以任何时候都能自由地进入宫殿后。清晰的记忆源于强烈的外界刺激。你所有的想像就是外界刺激（人脑分不清出现实与幻觉），所以你想像的越真实，你的记忆就越清晰。</p>
-<h2 id="冷读术和记忆宫殿的结合"><a href="#冷读术和记忆宫殿的结合" class="headerlink" title="冷读术和记忆宫殿的结合"></a>冷读术和记忆宫殿的结合</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在你的记忆宫殿里面规划一个区域放置各式各样的的任务，他们是某一类人的典型代表，特征鲜明。自己无聊的时候静下心来迅速进入自己熟知的记忆宫殿，挑选一种类型的人与之交流。反复多次，每天训练。当你联系到了秒进自己记忆宫殿的地步，你就可以迅速看穿一个陌生人。</p>
-<div align="center"><br><img src="http://images.forwallpaper.com/files/thumbs/preview/75/754908__brain-right-wallpaper_p.jpg" width="600" height="300" align="center"><br></div>
-
-<p><strong>一切前提在于：你要有足够丰富的阅历！永远不要舍弃接触更多风格类型的人的机会！如果是一样风格的人物，大可不接触！</strong></p>
-<h2 id="附冷读术常用例句"><a href="#附冷读术常用例句" class="headerlink" title="附冷读术常用例句"></a>附冷读术常用例句</h2><p>这些话一旦准确说出，别人就会立马觉得亲近或者反抗以致保持距离。一般而言，强势者会因为被看穿而故作淡定，仍可看出其些许不自然之处；弱势者会表现出亲近或者恐惧。</p>
-<ol>
-<li>外表看起来好像很有自信，但内心有烦躁不安的一面。 </li>
-<li>希望被人喜欢，受认同的欲望太强烈。 </li>
-<li>爱好某种程度的变化和自由，受到约束和限制就会感到不满。 </li>
-<li>一旦喜欢对方，为了迎合他的期待，有时会勉强自己 。</li>
-<li>你曾经因草率决定而失败，如果那时稍微耐心等会，情况会好的多。 </li>
-<li>你因为怕麻烦，有一点拖延该做事的倾向。 </li>
-<li>你曾经后悔自己的决定，每当你犹豫过后的决定，担心自己的决定对与错。</li>
-<li>当你不知所措的时候，你希望询问朋友意见，但你其实内心已有一个想法，只等待一个认同。</li>
-<li>即使有时候，你做事吃力不讨好，但你仍希望自己努力得到别人认同。</li>
-<li>有些时候想，你想独自冷静一下，思考一下，但是你其实心中渴望有人快点关心你。</li>
-<li>其实你知道自己想得到什么，但一直认为没有机会得到，所以一直停滞不前。</li>
-<li>我觉得你呢，不会毫不思索的接受别人的观点，很有自己的主见，不过有时会固执。</li>
-<li>我觉得你遇到遇到不顺心的事情，应该会很好的调整自己，跳出悲伤的。</li>
-<li>你曾经被信任的人背叛，正因如此你与人交往时多少保持一定的距离。你从经验中学到：坦率的相信别人未必是对的，有时候怀疑也是必要的。</li>
-<li>从你工作的内容来看，你对现在的状况感到不满，你觉得没有受到客观且应有的评价。</li>
-<li><strong>家人的事令你担心，多多少少带来压力，你已经做了一切能力所及的事，其他的就是力不从心之处，这时候，让时间来解决是最好的。</strong></li>
-<li>你是个直觉敏锐的人，即使才第一次见面，你也能马上掌握那个人的性格。</li>
-<li>你是个感情丰富的人，但是不善于表达，有时会被人误解或给人冷淡的印象。</li>
-<li>因为你看起来很直率，所以大家对你都没什么顾忌，就算是难听的话也会直说。</li>
-<li>你有时很外向人缘也比较不错，和朋友的关系相处的也比较和睦。但有时你有会比较自闭，有什么心事，或烦恼会自己一个人放在心里面，不愿意告诉别人，会深居简出。</li>
-</ol>
-<div align="right"><br>2015/7/23 16:14<br><br>Content By <a href="http://www.yaoleifly.com" target="_blank" rel="external">姚磊</a>. All Rights Reserved.<br></div>
-
-
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;什么是冷读术？&quot;&gt;&lt;a href=&quot;#什么是冷读术？&quot; class=&quot;headerlink&quot; title=&quot;什么是冷读术？&quot;&gt;&lt;/a&gt;什么是冷读术？&lt;/h2&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;所谓冷读术，就是 &lt;strong&gt;cold reading&lt;/strong&gt;，cold 有着没有准备的意思，reading 有着读心、占心的意思，冷读术就是在在别人没有防备的情况下，甚至第一次见面时看透他人的心思，从而使自己更好与别人交流。经常被心理医生用于辅助心理治疗。
-    
-    </summary>
-    
-    
-      <category term="创意" scheme="http://yoursite.com/tags/%E5%88%9B%E6%84%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暴雨将至</title>
-    <link href="http://yoursite.com/2015/07/21/%E6%9A%B4%E9%9B%A8%E5%B0%86%E8%87%B3/"/>
-    <id>http://yoursite.com/2015/07/21/暴雨将至/</id>
-    <published>2015-07-20T16:00:00.000Z</published>
-    <updated>2015-09-12T22:07:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>醒来的很早，昨天睡得很迟。强迫症一般地只要睡足<strong>六个半小时</strong>就够了。<a id="more"></a></p>
-<p>工作其实很轻松，自由度很大，谈不上喜欢，但也不是我厌恶的。工作中开点小差，那种愧疚感居然还是那么强烈，哈哈，果然还是一个皮小孩。</p>
-<p>另外，我的考研计划其实就像沙子一样经不住这样的暴雨冲刷，总归自己还是要努力努力。</p>
-<p>过几天就要回武汉了，这样的相见弥足珍贵，我要好好珍惜。</p>
-<p>如果今天下午面试官问我，你觉得现在工作中什么最重要?<br>我会说</p>
-<blockquote>
-<p>连接！连接其他人和世界的能力。</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;醒来的很早，昨天睡得很迟。强迫症一般地只要睡足&lt;strong&gt;六个半小时&lt;/strong&gt;就够了。
-    
-    </summary>
-    
-      <category term="生活" scheme="http://yoursite.com/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   

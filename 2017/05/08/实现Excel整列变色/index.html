@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Excel," />
 
 
 
@@ -86,15 +86,31 @@
 
 
 
-<meta name="description" content="忠实地思考着">
-<meta property="og:type" content="website">
-<meta property="og:title" content="某C的白板">
-<meta property="og:url" content="http://yoursite.com/tags/医院/index.html">
+<meta name="description" content="Excel选择某单元格整行、整列就变色的方法​    在使用Excel处理数据的时候，数据的输入是最关键的部分。
+　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！
+　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。
+　　根据目前">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实现Excel整列变色">
+<meta property="og:url" content="http://yoursite.com/2017/05/08/实现Excel整列变色/index.html">
 <meta property="og:site_name" content="某C的白板">
-<meta property="og:description" content="忠实地思考着">
+<meta property="og:description" content="Excel选择某单元格整行、整列就变色的方法​    在使用Excel处理数据的时候，数据的输入是最关键的部分。
+　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！
+　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。
+　　根据目前">
+<meta property="og:image" content="http://s10.sinaimg.cn/mw690/818b22e5td5e8ab840489&690">
+<meta property="og:image" content="http://s7.sinaimg.cn/mw690/818b22e5t7bca77cbb086&690">
+<meta property="og:image" content="http://s12.sinaimg.cn/mw690/818b22e5td5e8b0524e7b&690">
+<meta property="og:image" content="http://s1.sinaimg.cn/mw690/818b22e5td5e8b3e7adb0&690">
+<meta property="og:image" content="http://s4.sinaimg.cn/mw690/818b22e5gd70f18796a13&690">
+<meta property="og:updated_time" content="2017-05-08T01:55:37.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="某C的白板">
-<meta name="twitter:description" content="忠实地思考着">
+<meta name="twitter:title" content="实现Excel整列变色">
+<meta name="twitter:description" content="Excel选择某单元格整行、整列就变色的方法​    在使用Excel处理数据的时候，数据的输入是最关键的部分。
+　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！
+　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。
+　　根据目前">
+<meta name="twitter:image" content="http://s10.sinaimg.cn/mw690/818b22e5td5e8ab840489&690">
 
 
 
@@ -122,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/医院/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/08/实现Excel整列变色/"/>
 
 
 
 
 
-  <title> 标签: 医院 | 某C的白板 </title>
+  <title> 实现Excel整列变色 | 某C的白板 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -158,7 +174,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -273,46 +289,253 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        医院
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/08/实现Excel整列变色/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="从未表白的石头">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="某C的白板">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="某C的白板" src="">
+    </span>
+  </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                实现Excel整列变色
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-08T09:49:47+08:00">
+                2017-05-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/08/实现Excel整列变色/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/08/实现Excel整列变色/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h1 id="Excel选择某单元格整行、整列就变色的方法"><a href="#Excel选择某单元格整行、整列就变色的方法" class="headerlink" title="Excel选择某单元格整行、整列就变色的方法"></a>Excel选择某单元格整行、整列就变色的方法</h1><p>​    在使用Excel处理数据的时候，数据的输入是最关键的部分。</p>
+<p>　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！</p>
+<p>　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。</p>
+<p>　　根据目前的情况，要实现这样的效果，只能使用VBA来实现，下面是方法，请君过目。</p>
+<p>　　如下图，这是正常情况下的效果，当我们选择一个单元格后，只有这个单元格边框颜色有所变化，该行的其它单元格，都未发生任何变化。</p>
+<p><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=818b22e50101a6ah&amp;url=http://s10.sinaimg.cn/orignal/818b22e5td5e8ab840489" target="_blank" rel="external"><img src="http://s10.sinaimg.cn/mw690/818b22e5td5e8ab840489&amp;690" alt="img"></a></p>
+<p>　　现在，我们要做的就是，如下图一样，一旦选择了某个单元格，那么，该单元格所在的行，颜色发生改变，以方便我们录入数据。</p>
+<p><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=818b22e50101a6ah&amp;url=http://s7.sinaimg.cn/orignal/818b22e5t7bca77cbb086" target="_blank" rel="external"><img src="http://s7.sinaimg.cn/mw690/818b22e5t7bca77cbb086&amp;690" alt="img"></a></p>
+<p>　　实现的方法是，在工作表名称(如：Sheet1)上点击右键，在弹出的快捷菜单中选择“查看代码”，如下图！</p>
+<p><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=818b22e50101a6ah&amp;url=http://s12.sinaimg.cn/orignal/818b22e5td5e8b0524e7b" target="_blank" rel="external"><img src="http://s12.sinaimg.cn/mw690/818b22e5td5e8b0524e7b&amp;690" alt="img"></a></p>
+<p>　　接下来，会弹出VBA代码编写窗口，如下图！</p>
+<p><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=818b22e50101a6ah&amp;url=http://s1.sinaimg.cn/orignal/818b22e5td5e8b3e7adb0" target="_blank" rel="external"><img src="http://s1.sinaimg.cn/mw690/818b22e5td5e8b3e7adb0&amp;690" alt="img"></a></p>
+<p>　　上图中，在Sheet1上点击右键，选择“查看代码”，弹出代码编写窗口。</p>
+<p>　　现在，我们要做的就是输入VBA功能代码了，代码如上图！记住，先选择好Worksheet对象名称和SelectionChange事件名称，然后在窗口中输入如上图右边的那些代码。</p>
+<p>　　为方便大家学习，下面粘贴出源代码：</p>
+<p>　　Private Sub Worksheet_SelectionChange(ByVal Target As Range)</p>
+<p>　　Rows().Interior.ColorIndex = 0</p>
+<p>　　x = ActiveCell.Row</p>
+<p>　　Rows(x).Interior.ColorIndex = 28</p>
+<p>　　End Sub</p>
+<p>　　部分代码解释：Rows(x).Interior.ColorIndex = 28，其中的28，指的是颜色的代码，您可以从1到几百中选择一个颜色的值，此处可修改。至于其它地方，如果您不懂，千万别修改。</p>
+<p><strong>excel某一单元格，怎么实现让整行整列都变色，离开后单元格颜色恢复为原来。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">代码如下：</div><div class="line"></div><div class="line">Private Sub Worksheet_SelectionChange(ByVal Target As Range)</div><div class="line"></div><div class="line">Cells.Interior.ColorIndex = xlNone</div><div class="line"></div><div class="line">Rows(Target.Row).Interior.ColorIndex = 20</div><div class="line"></div><div class="line">Columns(Target.Column).Interior.ColorIndex = 20</div><div class="line"></div><div class="line">End Sub</div></pre></td></tr></table></figure>
+<p><img src="http://s4.sinaimg.cn/mw690/818b22e5gd70f18796a13&amp;690" alt="Excel选择某单元格整行、整列就变色的方法"></p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2017/04/07/浙江省儿童医院调研概述/" itemprop="url">
-              
-                <span itemprop="name">「创新型」宣教对住院患者满意度提升的效果评价</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>谢谢大爷,您嘞~~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/path/to/wechat.png" alt="从未表白的石头 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/path/to/alipay.jpg" alt="从未表白的石头 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-04-07T14:43:32+08:00"
-              content="2017-04-07" >
-          04-07
-        </time>
-      </div>
 
-    </header>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Excel/" rel="tag"># Excel</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/20/常见 Lunix 发行版本汇总/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
           
           </div>
@@ -320,6 +543,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/05/08/实现Excel整列变色/"
+           data-title="实现Excel整列变色" data-url="http://yoursite.com/2017/05/08/实现Excel整列变色/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -339,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -476,6 +716,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Excel选择某单元格整行、整列就变色的方法"><span class="nav-number">1.</span> <span class="nav-text">Excel选择某单元格整行、整列就变色的方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
@@ -597,6 +853,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

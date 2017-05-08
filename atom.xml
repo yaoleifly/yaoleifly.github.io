@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-08T01:55:37.972Z</updated>
+  <updated>2017-05-08T18:10:55.935Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://yoursite.com/2017/05/08/%E5%AE%9E%E7%8E%B0Excel%E6%95%B4%E5%88%97%E5%8F%98%E8%89%B2/"/>
     <id>http://yoursite.com/2017/05/08/实现Excel整列变色/</id>
     <published>2017-05-08T01:49:47.000Z</published>
-    <updated>2017-05-08T01:55:37.972Z</updated>
+    <updated>2017-05-08T18:10:55.935Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Excel选择某单元格整行、整列就变色的方法"><a href="#Excel选择某单元格整行、整列就变色的方法" class="headerlink" title="Excel选择某单元格整行、整列就变色的方法"></a>Excel选择某单元格整行、整列就变色的方法</h1><p>​    在使用Excel处理数据的时候，数据的输入是最关键的部分。</p>
 <p>　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！</p>
-<p>　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。</p>
+<p>　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。<a id="more"></a></p>
 <p>　　根据目前的情况，要实现这样的效果，只能使用VBA来实现，下面是方法，请君过目。</p>
 <p>　　如下图，这是正常情况下的效果，当我们选择一个单元格后，只有这个单元格边框颜色有所变化，该行的其它单元格，都未发生任何变化。</p>
 <p><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=818b22e50101a6ah&amp;url=http://s10.sinaimg.cn/orignal/818b22e5td5e8ab840489" target="_blank" rel="external"><img src="http://s10.sinaimg.cn/mw690/818b22e5td5e8ab840489&amp;690" alt="img"></a></p>
@@ -50,7 +50,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Excel选择某单元格整行、整列就变色的方法&quot;&gt;&lt;a href=&quot;#Excel选择某单元格整行、整列就变色的方法&quot; class=&quot;headerlink&quot; title=&quot;Excel选择某单元格整行、整列就变色的方法&quot;&gt;&lt;/a&gt;Excel选择某单元格整行、整列就变色的
+      &lt;h1 id=&quot;Excel选择某单元格整行、整列就变色的方法&quot;&gt;&lt;a href=&quot;#Excel选择某单元格整行、整列就变色的方法&quot; class=&quot;headerlink&quot; title=&quot;Excel选择某单元格整行、整列就变色的方法&quot;&gt;&lt;/a&gt;Excel选择某单元格整行、整列就变色的方法&lt;/h1&gt;&lt;p&gt;​    在使用Excel处理数据的时候，数据的输入是最关键的部分。&lt;/p&gt;
+&lt;p&gt;　　如果您在输入数据的时候，尤其是数据量比较大的情况，往往会因为无法直观的判断单元格所在的行，导致输入的数据输入到其它的行！&lt;/p&gt;
+&lt;p&gt;　　那么，有没有一种办法，能让我们实现，一旦选择了哪个单元格，该单元格的所在的行的颜色会发生改变，这样，我们就能直观的看出，数据应该输入到哪行了。
     
     </summary>
     
@@ -62,13 +64,13 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2017/04/20/%E5%B8%B8%E8%A7%81%20Lunix%20%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E6%B1%87%E6%80%BB/"/>
-    <id>http://yoursite.com/2017/04/20/常见 Lunix 发行版本汇总/</id>
-    <published>2017-04-20T05:57:54.467Z</published>
-    <updated>2017-04-20T06:03:09.447Z</updated>
+    <title>Linux 发行版</title>
+    <link href="http://yoursite.com/2017/04/22/%E5%B8%B8%E8%A7%81%20Lunix%20%E5%8F%91%E8%A1%8C%E7%89%88%E6%9C%AC%E6%B1%87%E6%80%BB/"/>
+    <id>http://yoursite.com/2017/04/22/常见 Lunix 发行版本汇总/</id>
+    <published>2017-04-22T05:37:58.000Z</published>
+    <updated>2017-05-08T18:11:53.471Z</updated>
     
-    <content type="html"><![CDATA[<p>本专题页汇总最受欢迎的 Linux 发行版基本介绍和下载地址，如果您是一位刚接触 Linux 的新手，这里的介绍可能对您有所帮助，如果您是使用 Linux 的前辈，也可以在评论处留下您宝贵意见和经验，以便让更多的人得到帮助！</p>
+    <content type="html"><![CDATA[<p>本专题页汇总最受欢迎的 Linux 发行版基本介绍和下载地址，如果您是一位刚接触 Linux 的新手，这里的介绍可能对您有所帮助，如果您是使用 Linux 的前辈，也可以在评论处留下您宝贵意见和经验，以便让更多的人得到帮助！<a id="more"></a></p>
 <p><strong>首先介绍以下几款国产的 Linux 发行版：</strong></p>
 <h2 id="Magic-Linux"><a href="#Magic-Linux" class="headerlink" title="Magic Linux"></a>Magic Linux</h2><ul>
 <li>系统：Linux</li>
@@ -348,11 +350,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;本专题页汇总最受欢迎的 Linux 发行版基本介绍和下载地址，如果您是一位刚接触 Linux 的新手，这里的介绍可能对您有所帮助，如果您是使用 Linux 的前辈，也可以在评论处留下您宝贵意见和经验，以便让更多的人得到帮助！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;首先介绍以下几款国
+      &lt;p&gt;本专题页汇总最受欢迎的 Linux 发行版基本介绍和下载地址，如果您是一位刚接触 Linux 的新手，这里的介绍可能对您有所帮助，如果您是使用 Linux 的前辈，也可以在评论处留下您宝贵意见和经验，以便让更多的人得到帮助！
     
     </summary>
     
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   

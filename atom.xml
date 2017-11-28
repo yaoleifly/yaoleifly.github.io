@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-28T07:54:30.612Z</updated>
+  <updated>2017-11-28T08:00:26.181Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/11/28/%E5%90%8E%E5%8F%B0%E8%AE%BE%E8%AE%A1_%E5%B9%BF%E5%91%8A%E5%92%8C%E6%B6%88%E6%81%AF%E7%AE%A1%E7%90%86/"/>
     <id>http://yoursite.com/2017/11/28/后台设计_广告和消息管理/</id>
     <published>2017-11-28T07:02:26.000Z</published>
-    <updated>2017-11-28T07:54:30.612Z</updated>
+    <updated>2017-11-28T08:00:26.181Z</updated>
     
     <content type="html"><![CDATA[<p>V2.8.8_运营管理后台</p>
 <p>产品需求文档</p>
@@ -77,6 +77,7 @@
 </tr>
 </tbody>
 </table>
+ <a id="more"></a>
 <p>317护产品部</p>
 <p>2017年11月</p>
 <p> 目录 <a href="#_Toc499296381">一、项目概述… 1</a> <a href="#_Toc499296382">1.1项目背景… 1</a> <a href="#_Toc499296383">1.2词汇表… 1</a> <a href="#_Toc499296384">二、功能需求… 1</a> <a href="#_Toc499296385">2.1业务用例… 1</a> <a href="#_Toc499296386">2.2通用模块… 2</a> <a href="#_Toc499296387">2.2.1 发送对象…. 2</a> <a href="#_Toc499296388">2.2.2 内容设置…. 3</a> <a href="#_Toc499296389">2.2.3 消息推送时间弹窗…. 3</a> <a href="#_Toc499296390">2.3功能列表… 3</a> <a href="#_Toc499296391">2.3.1广告管理…. 4</a> <a href="#_Toc499296392">2.3.2 消息管理…. 15</a>  </p>
@@ -670,7 +671,49 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;文件状态&lt;em
+&lt;td&gt;&lt;strong&gt;文件状态&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;  &lt;strong&gt;[   ]  **&lt;/strong&gt;草稿&lt;strong&gt;**&lt;/strong&gt;  &lt;strong&gt;[ **&lt;/strong&gt;√&lt;strong&gt;&lt;strong&gt;]  &lt;/strong&gt;&lt;/strong&gt;正式发布&lt;strong&gt;**&lt;/strong&gt;  &lt;strong&gt;[   ]  **&lt;/strong&gt;正在修改**&lt;/td&gt;
+&lt;td&gt;文件标识：&lt;/td&gt;
+&lt;td&gt;后台&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;当前版本：&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;作者：&lt;/td&gt;
+&lt;td&gt;姚磊&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;完成日期：&lt;/td&gt;
+&lt;td&gt;2017-11-23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;修订记录&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;序号&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;版本号&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;编写**&lt;/strong&gt;/&lt;strong&gt;&lt;strong&gt;修订说明**&lt;/strong&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;修订人&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;修订日期&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;备注&lt;em&gt;**&lt;/em&gt;&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;V1.0&lt;/td&gt;
+&lt;td&gt;广告和消息管理&lt;/td&gt;
+&lt;td&gt;姚磊&lt;/td&gt;
+&lt;td&gt;2107-11-23&lt;/td&gt;
+&lt;td&gt;创建&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
     
     </summary>
     

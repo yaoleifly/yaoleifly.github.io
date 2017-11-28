@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-12T07:16:27.709Z</updated>
+  <updated>2017-11-28T07:54:30.612Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,672 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>V2.8.8_运营管理后台产品需求文档</title>
+    <link href="http://yoursite.com/2017/11/28/%E5%90%8E%E5%8F%B0%E8%AE%BE%E8%AE%A1_%E5%B9%BF%E5%91%8A%E5%92%8C%E6%B6%88%E6%81%AF%E7%AE%A1%E7%90%86/"/>
+    <id>http://yoursite.com/2017/11/28/后台设计_广告和消息管理/</id>
+    <published>2017-11-28T07:02:26.000Z</published>
+    <updated>2017-11-28T07:54:30.612Z</updated>
+    
+    <content type="html"><![CDATA[<p>V2.8.8_运营管理后台</p>
+<p>产品需求文档</p>
+<table>
+<thead>
+<tr>
+<th>广告和消息管理</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文件状态<em>**</em></strong>  <strong>[   ]  **</strong>草稿<strong>**</strong>  <strong>[ **</strong>√<strong><strong>]  </strong></strong>正式发布<strong>**</strong>  <strong>[   ]  **</strong>正在修改**</td>
+<td>文件标识：</td>
+<td>后台</td>
+</tr>
+<tr>
+<td>当前版本：</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>作者：</td>
+<td>姚磊</td>
+<td></td>
+</tr>
+<tr>
+<td>完成日期：</td>
+<td>2017-11-23</td>
+</tr>
+</tbody>
+</table>
+<p>修订记录</p>
+<table>
+<thead>
+<tr>
+<th><strong>序号<em>**</em></strong></th>
+<th><strong>版本号<em>**</em></strong></th>
+<th><strong>编写**</strong>/<strong><strong>修订说明**</strong></strong></th>
+<th><strong>修订人<em>**</em></strong></th>
+<th><strong>修订日期<em>**</em></strong></th>
+<th><strong>备注<em>**</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>V1.0</td>
+<td>广告和消息管理</td>
+<td>姚磊</td>
+<td>2107-11-23</td>
+<td>创建</td>
+</tr>
+</tbody>
+</table>
+<p>317护产品部</p>
+<p>2017年11月</p>
+<p> 目录 <a href="#_Toc499296381">一、项目概述… 1</a> <a href="#_Toc499296382">1.1项目背景… 1</a> <a href="#_Toc499296383">1.2词汇表… 1</a> <a href="#_Toc499296384">二、功能需求… 1</a> <a href="#_Toc499296385">2.1业务用例… 1</a> <a href="#_Toc499296386">2.2通用模块… 2</a> <a href="#_Toc499296387">2.2.1 发送对象…. 2</a> <a href="#_Toc499296388">2.2.2 内容设置…. 3</a> <a href="#_Toc499296389">2.2.3 消息推送时间弹窗…. 3</a> <a href="#_Toc499296390">2.3功能列表… 3</a> <a href="#_Toc499296391">2.3.1广告管理…. 4</a> <a href="#_Toc499296392">2.3.2 消息管理…. 15</a>  </p>
+<h1 id="一、项目概述"><a href="#一、项目概述" class="headerlink" title="一、项目概述"></a><a href="">一、项目概述</a></h1><h2 id="1-1项目背景"><a href="#1-1项目背景" class="headerlink" title="1.1项目背景"></a><a href="">1.1</a>项目背景</h2><p>目前老管理后广告管理和需求管理功能较弱，同时也需要将功能模块迁移至新运营管理后台，借此机会优化广告管理和需求管理模块并迁移，同时满足运营、客服部门对广告和消息操作配置需求。</p>
+<h2 id="1-2词汇表"><a href="#1-2词汇表" class="headerlink" title="1.2词汇表"></a><a href="">1.2</a>词汇表</h2><table>
+<thead>
+<tr>
+<th><strong>序号<em>**</em></strong></th>
+<th><strong>词汇<em>**</em></strong></th>
+<th><strong>解释<em>**</em></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>广告管理</td>
+<td>通过新运营管理后台管理和配置317护管理后台、护士 App 端、微信端资源位。</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>消息管理</td>
+<td>通过新运营管理后台管理和配置 App 内推送、患者消息、微信消息、短信通道。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="二、功能需求"><a href="#二、功能需求" class="headerlink" title="二、功能需求"></a><a href="">二、功能需求</a></h1><h2 id="2-1业务用例"><a href="#2-1业务用例" class="headerlink" title="2.1业务用例"></a><a href="">2.1</a>业务用例</h2><p><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png" alt="img"></p>
+<h2 id="2-2通用模块"><a href="#2-2通用模块" class="headerlink" title="2.2通用模块"></a><a href="">2.2</a>通用模块</h2><h3 id="2-2-1-发送对象"><a href="#2-2-1-发送对象" class="headerlink" title="2.2.1 发送对象"></a><a href="">2.2.1 </a>发送对象</h3><table>
+<thead>
+<tr>
+<th>模块概述</th>
+<th>发送对象设置模块，广告管理和消息管理通用。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、发送对象支持按全部、按指定医院、自定义条件设置，默认发送对象为全部：  全部：选中所有医院；  按指定医院：支持按关键词搜索医院，支持全选、多选（反选），与目前老运营后台操作保持一致即可；  自定义条件：支持按照医院地区、等级、类型、对象进行设置，均默认全选，支持多选。  • 地区：省份、地级市  • 等级：三级特等、三级甲等、三级乙等、三级丙等、二级甲等、二级乙等、二级丙等、一级甲等、一级乙等、一级丙等  • 类型：儿童医院、妇产医院、综合医院、中医院、慢病医院、其它专科医院  • 对象：医院管理员、病区管理员、科室管理员、护士。  注意：  *该模块为通用模块</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-2-2-内容设置"><a href="#2-2-2-内容设置" class="headerlink" title="2.2.2 内容设置"></a><a href="">2.2.2 </a>内容设置</h3><table>
+<thead>
+<tr>
+<th>模块概述</th>
+<th>内容设置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、内容设置支持跳转至URL、自定义内容、无内容设置，默认选中跳转至URL；  2、跳转至URL需要配置链接，选中但为空，弹窗提醒”请输入URL地址”；  3、自定义内容支持HTML编辑器自主输入内容，可视化操作；  4、无内容则点击没有反应。  注意：*该模块为通用模块</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-2-3-消息推送时间弹窗"><a href="#2-2-3-消息推送时间弹窗" class="headerlink" title="2.2.3 消息推送时间弹窗"></a><a href="">2.2.3 </a>消息推送时间弹窗</h3><table>
+<thead>
+<tr>
+<th>模块概述</th>
+<th>消息推送时间设置弹窗</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image008.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、点击推送是弹窗显示该页面；  2、推送时间有立即推送和定时推送可选，立即推送为立即执行操作；  4、定时推送按照预约时间进行推送，时间精确到到秒，形如 2017-11-08 11:21:38  注意：*该模块为通用模块</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-3功能列表"><a href="#2-3功能列表" class="headerlink" title="2.3功能列表"></a><a href="">2.3</a>功能列表</h2><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>功能点</th>
+<th>需求概述</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>广告管理</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>App 内轮播图</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.2</td>
+<td>App 开屏广告</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.3</td>
+<td>后台护士培训轮播图</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.4</td>
+<td>后台患者宣教轮播图</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1.5</td>
+<td>微信端宣教底部轮播图</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>消息管理</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>App 内推送</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>患者消息</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>微信消息</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2.4</td>
+<td>短信通道</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-3-1广告管理"><a href="#2-3-1广告管理" class="headerlink" title="2.3.1广告管理"></a><a href="">2.3.1</a>广告管理</h3><table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>【新运营后台】-【运营管理】-新增广告管理模块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image010.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【新运营后台】-【运营管理】-【广告管理】可见</td>
+</tr>
+<tr>
+<td>基本流程</td>
+<td></td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示317护管理后台、护士 App 端、微信端广告资源位</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、按照App、后台、微信对资源位分类展示；  2、从上到下均为「资源位标题+广告说明+图片实例+建议尺寸文案」展示；  3、点击图片进入相应资源位列表页。  *此页面以交互视觉为准。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-1-1-App-内轮播图"><a href="#2-3-1-1-App-内轮播图" class="headerlink" title="2.3.1.1 App 内轮播图"></a><a href="">2.3.1.1 App </a>内轮播图</h4><p>广告列表</p>
+<table>
+<thead>
+<tr>
+<th><a href="">功能概述</a></th>
+<th>新运营后台后台配置 护士App【发现】模块内轮播图列表展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image012.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】可见</td>
+</tr>
+<tr>
+<td>基本流程</td>
+<td></td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示广告信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、记录广告 标题、更新时间、点击人数、点击次数、发送人、状态 的信息；  2、展示列表排序默认「运行中」状态的广告在前列，按更新时间从上到下排序，置顶操作的广告排在首位，置顶的广告排序为1，前一个置顶的广告排序更新为2，以此类推。；  3、状态包括运行中和待启两种：  运行中——广告正在运行中，可执行置顶、停用、取消置顶三种操作  待启用——广告尚未启用，可执行启用、编辑、删除操作  4、更新时间精确到到秒，形如 2017-11-08 11:21:38  5、列表分页展示，与其他模块页面样式保持一致(20,40,100条每页)；  6、同时处于运行中的广告条数小于等于6条。  注意：  <em>正在运行中的广告不可进行编辑操作；  </em>只记录和点击相关的数据，点击人数和点击次数。</td>
+</tr>
+</tbody>
+</table>
+<p>新增广告</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 新增护士App【发现】模块内轮播图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image014.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】-【App 内轮播图】-【新增广告】可见</td>
+</tr>
+<tr>
+<td>基本流程</td>
+<td></td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>新增广告</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、广告标题：必填项，最多15个字；  2、广告说明：可选，最多50个字；  3、封面上传：图片尺寸建议为 900<em>500 px；  4、内容设置：通用模块，保持一致；  5、发送范围设置：通用模块，保持一致。  注意：</em>图片尺寸建议为 900*500 px</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-1-2-App-内开屏广告"><a href="#2-3-1-2-App-内开屏广告" class="headerlink" title="2.3.1.2 App 内开屏广告"></a>2.3.1.2 App 内开屏广告</h4><p>广告列表</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 护士App 启动时的开屏广告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image016.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】可见</td>
+</tr>
+<tr>
+<td>基本流程</td>
+<td></td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示广告信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、记录广告 标题、更新时间、点击人数、点击次数、发送人、状态 的信息；  2、展示列表排序默认「运行中」状态的广告在前列；  3、状态包括运行中和待启两种：  运行中——广告正在运行中，可执行停用三种操作  待启用——广告尚未启用，可执行启用、编辑、删除操作  4、更新时间精确到到秒，形如 2017-11-08 11:21:38  5、列表分页展示，与其他模块页面样式保持一致(20,40,100条每页)；  <strong>6**</strong>、同时处于运行中的广告条数小于等于6<strong>**条。</strong>  <strong>7**</strong>、前端只展示启用的广告中的1<strong><strong>条，时间为3s,</strong></strong>等概率随机展现。<em>*  注意：  </em>正在运行中的广告不可进行编辑操作；  *只记录和点击相关的数据，点击人数和点击次数。</td>
+</tr>
+</tbody>
+</table>
+<p>新增广告</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 新增护士App 开屏广告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image018.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】-【App 开屏广告】-【新增广告】可见</td>
+</tr>
+<tr>
+<td>基本流程</td>
+<td></td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>新增广告</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、广告标题：必填项，最多15个字；  2、广告说明：可选，最多50个字；  3、封面上传：图片建议尺寸为 1080<em>1920 px；  4、内容设置：通用模块，保持一致；  5、发送范围设置：通用模块，保持一致。  注意：</em>图片尺寸建议为 1080*1920 px</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-1-3-后台护士培训轮播图"><a href="#2-3-1-3-后台护士培训轮播图" class="headerlink" title="2.3.1.3 后台护士培训轮播图"></a>2.3.1.3 后台护士培训轮播图</h4><p>广告列表</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>运营后台配置医院后台护士培训轮播图列表展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image020.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示广告信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、记录广告 标题、更新时间、点击人数、点击次数、发送人、状态 的信息；  2、展示列表排序默认「运行中」状态的广告在前列，置顶操作的广告排在首位，置顶的广告排序为1，前一个置顶的广告排序更新为2，以此类推。；  3、状态包括运行中和待启两种：  运行中——广告正在运行中，可执行置顶、停用、取消置顶三种操作  待启用——广告尚未启用，可执行启用、编辑、删除操作  4、更新时间精确到到秒，形如 2017-11-08 11:21:38  5、列表分页展示，与其他模块页面样式保持一致(20,40,100条每页)；  6、同时处于运行中的广告条数小于等于6条；  7、点击广告默认为打开新页面，开启弹窗显示，则内容以弹窗形式显示。  注意：  <em>正在运行中的广告不可进行编辑操作；  </em>只记录和点击相关的数据，点击人数和点击次数。</td>
+</tr>
+</tbody>
+</table>
+<p>新增广告</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新增广告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image022.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】-【后台护士培训轮播图】-【新增广告】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>新增广告</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、广告标题：必填项，最多15个字；  2、广告说明：可选，最多50个字；  3、封面上传：图片尺寸建议为 900<em>500 px；  4、内容设置：通用模块，保持一致；  5、发送范围设置：通用模块，保持一致。  注意：</em>图片尺寸建议为 900*500 px</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-1-4-后台患者宣教轮播图"><a href="#2-3-1-4-后台患者宣教轮播图" class="headerlink" title="2.3.1.4 后台患者宣教轮播图"></a>2.3.1.4 后台患者宣教轮播图</h4><p>广告列表</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>运营后台配置医院后台患者宣教轮播图列表展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image024.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示广告信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、记录广告 标题、更新时间、点击人数、点击次数、发送人、状态 的信息；  2、展示列表排序默认「运行中」状态的广告在前列，置顶操作的广告排在首位，置顶的广告排序为1，前一个置顶的广告排序更新为2，以此类推。；  3、状态包括运行中和待启两种：  运行中——广告正在运行中，可执行置顶、停用、取消置顶三种操作  待启用——广告尚未启用，可执行启用、编辑、删除操作  4、更新时间精确到到秒，形如 2017-11-08 11:21:38  5、列表分页展示，与其他模块页面样式保持一致(20,40,100条每页)；  6、同时处于运行中的广告条数小于等于6条；  7、点击广告默认为打开新页面，开启弹窗显示，则内容以弹窗形式显示。  注意：  <em>正在运行中的广告不可进行编辑操作；  </em>只记录和点击相关的数据，点击人数和点击次数。</td>
+</tr>
+</tbody>
+</table>
+<p>新增广告</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新增广告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image026.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】-【后台护士培训轮播图】-【新增广告】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>新增广告</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、广告标题：必填项，最多15个字；  2、广告说明：可选，最多50个字；  3、封面上传：图片尺寸建议为 250<em>150 px；  4、内容设置：通用模块，保持一致；  5、发送范围设置：通用模块，保持一致。  注意：</em>图片尺寸建议为 250*150 px</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-3-5-微信端宣教底部轮播图"><a href="#2-3-3-5-微信端宣教底部轮播图" class="headerlink" title="2.3.3.5 微信端宣教底部轮播图"></a>2.3.3.5 微信端宣教底部轮播图</h4><p>广告列表</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>运营后台配置微信端患者宣教底部轮播图列表展示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image028.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开317护公众号微信宣教可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示广告信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、记录广告 标题、更新时间、点击人数、点击次数、发送人、状态 的信息；  2、展示列表排序默认「运行中」状态的广告在前列，置顶操作的广告排在首位，置顶的广告排序为1，前一个置顶的广告排序更新为2，以此类推。；  3、状态包括运行中和待启两种：  运行中——广告正在运行中，可执行置顶、停用、取消置顶三种操作  待启用——广告尚未启用，可执行启用、编辑、删除操作  4、更新时间精确到到秒，形如 2017-11-08 11:21:38  5、列表分页展示，与其他模块页面样式保持一致(20,40,100条每页)；  6、同时处于运行中的广告条数小于等于6条。  注意：  <em>正在运行中的广告不可进行编辑操作；  </em>只记录和点击相关的数据，点击人数和点击次数。</td>
+</tr>
+</tbody>
+</table>
+<p>新增广告</p>
+<table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新增广告</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image029.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【广告管理】-【后台护士培训轮播图】-【新增广告】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>新增广告</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>1、广告标题：必填项，最多15个字；  2、广告说明：可选，最多50个字；  3、封面上传：图片尺寸建议为 900<em>500 px；  4、内容设置：通用模块，保持一致；  5、发送范围设置：通用模块，保持一致。  注意：</em>图片尺寸建议为 900*500 px</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-3-2-消息管理"><a href="#2-3-2-消息管理" class="headerlink" title="2.3.2 消息管理"></a><a href="">2.3.2 </a>消息管理</h3><h4 id="2-3-2-1-App-内推送"><a href="#2-3-2-1-App-内推送" class="headerlink" title="2.3.2.1 App 内推送"></a>2.3.2.1 App 内推送</h4><table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 护士App 内消息推送</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image031.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【消息管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>展示消息列表</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>列表规则：  1、记录消息 标题、发送时间、到达/发送任务、发送人、状态  的信息；  2、展示列表以发送时间先后从上到下排序（刚发送的展示在最前面）；  3、消息状态包括 正在推送 、已完成、 待推送、被停止 四种：  正在推送——消息已经执行推送，正在推送中  已完成——消息已经全部完成推送  待推送——消息已经编辑设置完成，保存完毕，等待执行推送操作  被停止——消息推送中强行停止   4、对单条消息可进行 查看、停止、推送、编辑、删除6种操作：  查看—查看处于正在推送和已完成状态的消息详细内容，不可进行编辑和删除操作  停止——停止处于正在推送状态的消息  推送——对处于待推送状态的消息执行推送操作  编辑——编辑处于待推送和被停止状态的消息  删除——删除处于待推送和被停止状态的消息  5、点击【推送】显示推送时间设置弹窗  <em>推送时间弹窗为通用模块  新增编辑规则：  1、标题：必填项，最多15个字；  2、封面上传：图片建议尺寸为 900</em>500 px；  3、内容设置：通用模块，保持一致；  4、推送范围设置：通用模块，但新增按制定账号推送，规则：纯文本框；换行区分不同手机号。   * 新增按制定账号推送</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-2-2-患者消息"><a href="#2-3-2-2-患者消息" class="headerlink" title="2.3.2.2 患者消息"></a>2.3.2.2 患者消息</h4><table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 患者消息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image033.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【消息管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>列表展示消息信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>列表规则：  1、记录消息 标题、发送时间、到达/发送任务、发送人、状态  的信息；  2、展示列表以发送时间先后从上到下排序（刚发送的展示在最前面）；  3、消息状态包括 正在推送 、已完成、 待推送、被停止 四种：  正在推送——消息已经执行推送，正在推送中  已完成——消息已经全部完成推送  待推送——消息已经编辑设置完成，保存完毕，等待执行推送操作  被停止——消息推送中强行停止   4、对单条消息可进行 查看、停止、推送、编辑、删除6种操作：  查看—查看处于正在推送和已完成状态的消息详细内容，不可进行编辑和删除操作  停止——停止处于正在推送状态的消息  推送——对处于待推送状态的消息执行推送操作  编辑——编辑处于待推送和被停止状态的消息  删除——删除处于待推送和被停止状态的消息  5、点击【推送】显示推送时间设置弹窗  *推送时间弹窗为通用模块     新增编辑规则：  目前后台已有该功能，模块保持不变，逻辑更新为先保存然后回列表页操作。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-3-3-微信消息"><a href="#2-3-3-3-微信消息" class="headerlink" title="2.3.3.3 微信消息"></a>2.3.3.3 微信消息</h4><table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 微信消息</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image035.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【消息管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>微信公众号24小时内有互动，可向推送图文信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>列表规则：  1、记录消息 标题、发送时间、到达/发送任务、发送人、状态  的信息；  2、展示列表以发送时间先后从上到下排序（刚发送的展示在最前面）；  3、消息状态包括 正在推送 、已完成、 待推送、被停止 四种：  正在推送——消息已经执行推送，正在推送中  已完成——消息已经全部完成推送  待推送——消息已经编辑设置完成，保存完毕，等待执行推送操作  被停止——消息推送中强行停止   4、对单条消息可进行 查看、停止、推送、编辑、删除6种操作：  查看—查看处于正在推送和已完成状态的消息详细内容，不可进行编辑和删除操作  停止——停止处于正在推送状态的消息  推送——对处于待推送状态的消息执行推送操作  编辑——编辑处于待推送和被停止状态的消息  删除——删除处于待推送和被停止状态的消息  5、点击【推送】显示推送时间设置弹窗  <em>推送时间弹窗为通用模块     新增编辑规则：  1、标题：必填项，最多15个字；  2、内容设置：通用模块，保持一致；  3、推送范围：通用模块，保持一致。  4、支持输入病区或科室搜索，多选，已选择的以豆腐块显示。  注意：  </em>不同医院叫法不一样，科室和病区实为同一概念。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2-3-3-4-短信通道"><a href="#2-3-3-4-短信通道" class="headerlink" title="2.3.3.4 短信通道"></a>2.3.3.4 短信通道</h4><table>
+<thead>
+<tr>
+<th>功能概述</th>
+<th>新运营后台后台配置 短信通道</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>界面原型</td>
+<td><img src="file:///C:/Users/jemai/AppData/Local/Temp/msohtmlclip1/01/clip_image037.jpg" alt="img"></td>
+</tr>
+<tr>
+<td>前置流程</td>
+<td>打开【运营后台】-【管理医院】-【消息管理】可见</td>
+</tr>
+<tr>
+<td>功能说明</td>
+<td>短信通道推送信息</td>
+</tr>
+<tr>
+<td>规则详情</td>
+<td>列表规则：  1、记录消息 标题、发送时间、到达/发送任务、发送人、状态 的信息；  2、展示列表以发送时间先后从上到下排序（刚发送的展示在最前面）；  3、消息状态包括 正在推送 、已完成、 待推送、被停止 四种：  正在推送——消息已经执行推送，正在推送中  已完成——消息已经全部完成推送  待推送——消息已经编辑设置完成，保存完毕，等待执行推送操作  被停止——消息推送中强行停止   4、对单条消息可进行 查看、停止、推送、编辑、删除6种操作：  查看—查看处于正在推送和已完成状态的消息详细内容，不可进行编辑和删除操作  停止——停止处于正在推送状态的消息  推送——对处于待推送状态的消息执行推送操作  编辑——编辑处于待推送和被停止状态的消息  删除——删除处于待推送和被停止状态的消息  5、点击【推送】显示推送时间设置弹窗  <em>推送时间弹窗为通用模块     新增编辑规则：  1、标题：必填项，最多15个字；  2、发送对象：通用模块，保持一致。  3、消息内容前缀为【317护】写入短信接口中。  4、短信内容，至多60个字符。（数字、字母、标点符号均计数）  注意：  </em>317护和医管苑目前使用同一套短信通道吗，需要区分不同的接口。</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;V2.8.8_运营管理后台&lt;/p&gt;
+&lt;p&gt;产品需求文档&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;广告和消息管理&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;文件状态&lt;em
+    
+    </summary>
+    
+      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>电子书支援计划</title>
@@ -2035,33 +2701,6 @@
       <category term="少数派" scheme="http://yoursite.com/tags/%E5%B0%91%E6%95%B0%E6%B4%BE/"/>
     
       <category term="ROM" scheme="http://yoursite.com/tags/ROM/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>产品实习生</title>
-    <link href="http://yoursite.com/2015/10/29/%E6%81%92%E7%94%9F%E8%8A%B8%E6%B3%B0%E5%AE%9E%E4%B9%A0%E5%BF%83%E5%BE%97/"/>
-    <id>http://yoursite.com/2015/10/29/恒生芸泰实习心得/</id>
-    <published>2015-10-29T00:58:58.000Z</published>
-    <updated>2015-10-28T17:18:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>好久不更新的博客，终于也是打起来了精神，每日一更一千字的想法也是淹没在看似繁忙的生活中。在恒生芸泰的实习也是让我感觉可以收获更多的，这样子有些挑战性的生活让我有了生活充实的感觉，一个月内便初步学校了Axure和Xmind使用，对于如何开展一个项目也是稍稍有些明白，始终觉得自己学习的不够，知道的不多，这应该是一个好的趋势。<a id="more"></a></p>
-<p>另外，繁忙也让我忽视对长远事业的打算，最近做事的风格十分急于看到收益，急功近利来形容也不为过，这些应该改进。</p>
-<p>值得反思的还有一点，做事的细心程度需要加强，许多细节性的事情没有注意到，不要再犯低级错误！</p>
-<p>这里记录一下这几天工作的相关问题，希望自己可以经常回头看看。</p>
-<p><a href="https://app.yinxiang.com/Home.action#n=34c0c231-7954-4899-834a-2a0ff852831e&amp;ses=4&amp;sh=2&amp;sds=5&amp;" target="_blank" rel="external">广东云医院通用科室</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;好久不更新的博客，终于也是打起来了精神，每日一更一千字的想法也是淹没在看似繁忙的生活中。在恒生芸泰的实习也是让我感觉可以收获更多的，这样子有些挑战性的生活让我有了生活充实的感觉，一个月内便初步学校了Axure和Xmind使用，对于如何开展一个项目也是稍稍有些明白，始终觉得自己学习的不够，知道的不多，这应该是一个好的趋势。
-    
-    </summary>
-    
-      <category term="学习" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="心得" scheme="http://yoursite.com/tags/%E5%BF%83%E5%BE%97/"/>
     
   </entry>
   
